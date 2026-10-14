@@ -140,8 +140,25 @@ if (params.get("actions")) {
     bar.appendChild(button);
   };
   const decideAll = (decision) => window.__sd.activeEditor.doc.trackChanges.decide({ decision, target: { kind: "all" } });
-  addButton("Accept all", () => decideAll("accept"));
-  addButton("Reject all", () => decideAll("reject"));
+  const scrollSteps = 60;
+  const nextFrame = () => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  const scrollStep = async (toEnd, step) => {
+    const scroller = document.scrollingElement;
+    const max = scroller.scrollHeight - scroller.clientHeight;
+    scroller.scrollTop = toEnd ? (max * step) / scrollSteps : max * (1 - step / scrollSteps);
+    await nextFrame();
+  };
+  const scrollTo = async (toEnd) => {
+    const start = performance.now();
+    const steps = Array.from({ length: scrollSteps }, (_, index) => index + 1);
+    await steps.reduce((previous, step) => previous.then(() => scrollStep(toEnd, step)), Promise.resolve());
+    return `${((performance.now() - start) / 1000).toFixed(1)} s for ${scrollSteps} steps`;
+  };
+  const scrollMode = params.get("actions") === "scroll";
+  if (scrollMode) addButton("Scroll to end", () => scrollTo(true));
+  if (scrollMode) addButton("Scroll to top", () => scrollTo(false));
+  if (!scrollMode) addButton("Accept all", () => decideAll("accept"));
+  if (!scrollMode) addButton("Reject all", () => decideAll("reject"));
   bar.appendChild(status);
   document.body.appendChild(bar);
 }

@@ -1,9 +1,12 @@
 # SD-105 (b): timestamps
 
-Video: `SD-105-b.mp4` (22 s). Control take: the same document with every insertion accepted (22 tracked changes left, from other parts of the file). Same overlay and the same 44 wheel events as take A.
+Video: `SD-105-b.mp4` (37 s). Control: the same document with the insertions accepted (22 unrelated changes remain). Same overlay, buttons and actions as take A. SuperDoc 2.23.0, Chrome, MacBook M4. Idle pauses between actions are shortened; the scrolls are uncut.
 
-- **00:00.0** Document loaded at the top, stalls 0
-- **00:01.5** Steady mouse-wheel scrolling starts  _(expected: smooth scrolling)_
-  - result: scrolling stays smooth; worst frame about 34 ms
-- **00:15.0** End of document reached after 13.0 s of scrolling; stalls 0
-- **00:22.1** end
+- **00:01.6** Click **Scroll to end**
+  - result: smooth, **3.8 s**, 0 stalls
+- **00:11.6** Scroll up one screen with the mouse wheel to the schedule table at the end (the green background here is ordinary highlight formatting, not a tracked change)
+- **00:18.2** Click inside "{{Subprocessor Responsibility Allocation}}"
+  - result: the caret lands; no freeze
+- **00:24.8** Click **Scroll to top**
+  - result: **3.8 s**, 0 stalls
+- **00:36.2** end

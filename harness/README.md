@@ -133,3 +133,4 @@ versions above.
 | `label` | text | Caption in a small top-right overlay (e.g. `label=SD-09`). |
 | `hud` | comma list of `fps`, `tc`, `err` | `fps`: live frame time, worst frame in the last 2 s, count of stalls over 500 ms. `tc`: live tracked-change and comment counts (polled every second through the doc API). `err`: the last `onException` / console error, so silent rejections are visible. |
 | `actions` | `1` | A small "Accept all / Reject all" bar that calls `doc.trackChanges.decide({target:{kind:"all"}})` and prints the receipt, since a bare mount has no toolbar. |
+| `actions` | `scroll` | "Scroll to end / Scroll to top" buttons: scroll the whole document in 60 steps (one step per two animation frames) and print the elapsed time. Used for the SD-105 video. |

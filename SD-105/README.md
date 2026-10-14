@@ -7,14 +7,19 @@ On a document carrying a large block of tracked insertions (a multi-page schedul
 - **superdoc 2.23.0** (pinned in this repo's `package.json`, paired with `@superdoc/sdk` 2.20.0): **REPRODUCES** — see Evidence below. Bare `new SuperDoc(...)` mount via this repo's `harness/`, no collaboration, no custom UI.
 - **superdoc 2.20.0**: reproduces as well, per prior research (not re-run in this repo; see `results-scroll-2.20.0.json`-equivalent figures cited in Evidence — numbers are close to 2.23.0, within ~5%).
 - Browser: Chromium (Playwright, headless), 1280×900. Node 24.
+- **Hardware: every number in this folder was measured on an Apple MacBook M4, a fast machine.** On weaker machines, which is what our customers use, the results are **far worse**. The 13–14 s scroll and the multi-second stalls here are a best case.
 - Fixtures are bare `.docx` files mounted directly; no Vallor application code is involved.
 
 ## Video
 
-SuperDoc 2.23.0, Chrome, local harness, the same 44 mouse-wheel events in both takes. The overlay shows frame time and the number of frames over 500 ms ("stalls").
+SuperDoc 2.23.0, Chrome, local harness, **MacBook M4**. Both takes do the same thing: click **Scroll to end** (a harness button that scrolls the whole document in 60 steps as fast as the page can draw and prints the time), scroll up to the schedule table, click a redline, then click **Scroll to top**. The overlay shows frame time and the number of frames over 500 ms ("stalls").
 
-- [`video/SD-105-a.mp4`](video/SD-105-a.mp4): document with 1,629 tracked insertions. Scrolling stutters and freezes. It takes 18.1 s with 6 stalls, the worst frame about 1.5 s ([timestamps](video/TIMESTAMPS-a.md)).
-- [`video/SD-105-b.mp4`](video/SD-105-b.mp4): the same document with the insertions accepted. Scrolling is smooth: 13.0 s, 0 stalls, worst frame about 34 ms ([timestamps](video/TIMESTAMPS-b.md)).
+| Take | Scroll to end | Scroll to top | Stalls > 500 ms |
+|---|---|---|---|
+| [`video/SD-105-a.mp4`](video/SD-105-a.mp4): 1,629 tracked insertions ([timestamps](video/TIMESTAMPS-a.md)) | **12.2 s** | **14.5 s** | **14** |
+| [`video/SD-105-b.mp4`](video/SD-105-b.mp4): same document, insertions accepted ([timestamps](video/TIMESTAMPS-b.md)) | 3.8 s | 3.8 s | 0 |
+
+On weaker machines than the M4, which is what our customers use, the tracked take is far worse.
 
 ## Steps to reproduce
 

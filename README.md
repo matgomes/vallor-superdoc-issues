@@ -23,7 +23,7 @@ suggested fix and related issues. Where an issue is visual or interaction-driven
 
 ## Urgent
 
-- [**SD-105**](SD-105/): **documents with many tracked insertions freeze the editor.** A 12-page contract with a pasted schedule (1,629 `w:ins`) takes **13.7 s to scroll** (2.0 s once accepted), heap 122 → 351 MB, 42 long tasks; Backspace inside the tracked text takes ~6× longer; a synthetic 2,000-revision file reaches 8–34 s per scroll step and more than 1.1 GB. Includes CPU-profile analysis and fix directions. Videos: [tracked](SD-105/video/SD-105-a.mp4), [accepted control](SD-105/video/SD-105-b.mp4).
+- [**SD-105**](SD-105/): **documents with many tracked insertions freeze the editor.** A 12-page contract with a pasted schedule (1,629 `w:ins`) takes **13.7 s to scroll** (2.0 s once accepted), heap 122 → 351 MB, 42 long tasks; Backspace inside the tracked text takes ~6× longer; a synthetic 2,000-revision file reaches 8–34 s per scroll step and more than 1.1 GB. Includes CPU-profile analysis and fix directions. Measured on a MacBook M4; on the weaker machines our customers use it is far worse. Videos: [tracked](SD-105/video/SD-105-a.mp4), [accepted control](SD-105/video/SD-105-b.mp4).
 
 ## High
 
