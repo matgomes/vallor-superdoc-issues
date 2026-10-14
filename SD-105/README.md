@@ -7,7 +7,7 @@ On a document carrying a large block of tracked insertions (a multi-page schedul
 - **superdoc 2.23.0** (pinned in this repo's `package.json`, paired with `@superdoc/sdk` 2.20.0): **REPRODUCES** — see Evidence below. Bare `new SuperDoc(...)` mount via this repo's `harness/`, no collaboration, no custom UI.
 - **superdoc 2.20.0**: reproduces as well, per prior research (not re-run in this repo; see `results-scroll-2.20.0.json`-equivalent figures cited in Evidence — numbers are close to 2.23.0, within ~5%).
 - Browser: Chromium (Playwright, headless), 1280×900. Node 24.
-- **Hardware: every number in this folder was measured on an Apple MacBook M4, a fast machine.** On weaker machines, which is what our customers use, the results are **far worse**. The 13–14 s scroll and the multi-second stalls here are a best case.
+- **Hardware: every number in this folder was measured on an Apple MacBook M4, a fast machine.** On weaker machines, which is what our customers use, the results are **far worse**: the editor becomes unusable and the browser tab crashes. The 13–14 s scroll and the multi-second stalls here are a best case.
 - Fixtures are bare `.docx` files mounted directly; no Vallor application code is involved.
 
 ## Video
@@ -19,7 +19,7 @@ SuperDoc 2.23.0, Chrome, local harness, **MacBook M4**. Both takes do the same t
 | [`video/SD-105-a.mp4`](video/SD-105-a.mp4): 1,629 tracked insertions ([timestamps](video/TIMESTAMPS-a.md)) | **12.2 s** | **14.5 s** | **14** |
 | [`video/SD-105-b.mp4`](video/SD-105-b.mp4): same document, insertions accepted ([timestamps](video/TIMESTAMPS-b.md)) | 3.8 s | 3.8 s | 0 |
 
-On weaker machines than the M4, which is what our customers use, the tracked take is far worse.
+On weaker machines than the M4, which is what our customers use, it is far worse: the editor becomes unusable and the browser tab crashes.
 
 ## Steps to reproduce
 
