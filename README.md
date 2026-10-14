@@ -56,6 +56,7 @@ suggested fix and related issues. Where an issue is visual or interaction-driven
 
 ## Low
 
+- [**SD-108**](SD-108/): a full-page header image (page art: logo and footer band, `behindDoc`, `wrapNone`, extent = the whole page) is shrunk to the body height between the margins and centred, so the logo lands on the title and the footer floats mid-page. Word draws it at full size. [Side-by-side](SD-108/screenshots/side-by-side.png).
 - [**SD-60**](SD-60/): `roomMode:"create"` on an existing room fails to open the document (`collaboration-v2-room-already-exists`). It now shows an error card, but there's no create-or-join option.
 
 ## Worth mentioning

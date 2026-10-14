@@ -1,0 +1,22 @@
+{
+  "version": "2.23.0",
+  "fixture": "SD-108/page-art-shrunk.docx",
+  "declared": {
+    "imageWidthPx": 792,
+    "imageHeightPx": 1120,
+    "bodyHeightPx": 835
+  },
+  "rendered": {
+    "page": {
+      "width": 794,
+      "height": 1123
+    },
+    "image": {
+      "left": 102,
+      "top": 144,
+      "width": 591,
+      "height": 835
+    }
+  },
+  "shrunk": true
+}
