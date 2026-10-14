@@ -1,0 +1,79 @@
+{
+  "superdocVersion": "2.23.0",
+  "sdkVersion": "2.20.0",
+  "verdict": "REPRODUCES",
+  "staticResult": {
+    "totalActionCount": 41,
+    "checkedDispositions": {
+      "split_list": "tracked",
+      "apply_style": "tracked",
+      "style_table": "tracked",
+      "move_table": "tracked",
+      "set_paragraph_spacing": "tracked",
+      "insert_page_break": "tracked",
+      "add_hyperlink": "tracked",
+      "move_range": "tracked",
+      "replace_text": "tracked",
+      "delete_text": "tracked",
+      "insert_toc": "tracked",
+      "normalize_body_font_size": "tracked"
+    },
+    "fallbackLineNumbers": [
+      944,
+      956,
+      1439,
+      4772,
+      4869
+    ]
+  },
+  "explicitTracked": {
+    "status": "ok",
+    "trackedChangesBefore": 0,
+    "trackedChangesAfter": 1,
+    "carrierSummary": "paragraph formatting revision: style: ∅ → Heading2, paragraphStyle: ∅ → Heading2"
+  },
+  "omittedChangeMode": {
+    "status": "ok",
+    "trackedChangesBefore": 0,
+    "trackedChangesAfter": 0,
+    "carrierSummary": null
+  },
+  "moveTable": {
+    "ok": true,
+    "result": {
+      "status": "failed",
+      "intent": "move_table",
+      "preSnapshot": {
+        "revision": "0",
+        "counts": {
+          "blocks": 122,
+          "paragraphs": 120,
+          "headings": 16,
+          "tables": 2,
+          "lists": 2,
+          "images": 0,
+          "comments": 0,
+          "trackedChanges": 37,
+          "sections": 1,
+          "fields": 6,
+          "hyperlinks": 0,
+          "bookmarks": 256,
+          "contentControls": 0,
+          "permissionRanges": 0,
+          "styles": 0,
+          "headers": 3,
+          "footers": 3
+        }
+      },
+      "selectedTargets": [],
+      "executedOperations": [],
+      "verification": [],
+      "errors": [
+        {
+          "code": "CAPABILITY_UNAVAILABLE",
+          "message": "tables.move (tracked): the table carries comment/bookmark/permission anchors that cannot yet be safely duplicated."
+        }
+      ]
+    }
+  }
+}

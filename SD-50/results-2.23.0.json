@@ -1,0 +1,104 @@
+{
+  "fixtureOneResults": {
+    "fixture": "SD-50/near-identical-paragraphs.docx",
+    "attempts": [
+      {
+        "nodeId": "00000001",
+        "nodeType": "paragraph",
+        "textPreview": "First paragraph in the whole document, for comment anchoring.",
+        "succeeded": true,
+        "commentId": "0"
+      },
+      {
+        "nodeId": "00000002",
+        "nodeType": "paragraph",
+        "textPreview": "Plain single-run paragraph for comment anchoring.",
+        "succeeded": true,
+        "commentId": "1"
+      },
+      {
+        "nodeId": "00000003",
+        "nodeType": "paragraph",
+        "textPreview": "Split-run paragraph for comment anchoring.",
+        "succeeded": true,
+        "commentId": "2"
+      },
+      {
+        "nodeId": "tbl:00000004",
+        "nodeType": "table",
+        "textPreview": null,
+        "succeeded": false,
+        "error": {
+          "name": "SuperDocCliError",
+          "message": "comment target could not be resolved: Block \"tbl:00000004\" not found.",
+          "code": "TARGET_NOT_FOUND"
+        }
+      },
+      {
+        "nodeId": "00000005",
+        "nodeType": "paragraph",
+        "textPreview": "Paragraph immediately after a table, for comment anchoring.",
+        "succeeded": true,
+        "commentId": "3"
+      },
+      {
+        "nodeId": "00000006",
+        "nodeType": "paragraph",
+        "textPreview": "Paragraph with a bookmark, for comment anchoring.",
+        "succeeded": true,
+        "commentId": "4"
+      },
+      {
+        "nodeId": "00000007",
+        "nodeType": "paragraph",
+        "textPreview": "Last paragraph in the whole document, for comment anchoring.",
+        "succeeded": true,
+        "commentId": "5"
+      }
+    ]
+  },
+  "fixtureTwoResults": {
+    "fixture": "SD-50/near-identical-paragraphs-2.docx",
+    "attempts": [
+      {
+        "nodeId": "00000001",
+        "nodeType": "listItem",
+        "textPreview": "First list item for comment anchoring.",
+        "succeeded": true,
+        "commentId": "0"
+      },
+      {
+        "nodeId": "00000002",
+        "nodeType": "listItem",
+        "textPreview": "Second list item for comment anchoring.",
+        "succeeded": true,
+        "commentId": "1"
+      },
+      {
+        "nodeId": "00000003",
+        "nodeType": "paragraph",
+        "textPreview": "",
+        "succeeded": false,
+        "error": {
+          "name": "SuperDocCliError",
+          "message": "target range could not be resolved to source bytes.",
+          "code": "INVALID_TARGET"
+        }
+      },
+      {
+        "nodeId": "00000004",
+        "nodeType": "paragraph",
+        "textPreview": "Before break.\nAfter break, for comment anchoring.",
+        "succeeded": true,
+        "commentId": "2"
+      },
+      {
+        "nodeId": "00000005",
+        "nodeType": "paragraph",
+        "textPreview": "link text and more text for anchoring.",
+        "succeeded": true,
+        "commentId": "3"
+      }
+    ]
+  }
+}

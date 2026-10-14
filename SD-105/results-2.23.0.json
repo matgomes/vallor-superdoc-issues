@@ -1,0 +1,238 @@
+[
+  {
+    "doc": "SD-105/tracked-paste-schedule.docx",
+    "label": "tracked (158 review items)",
+    "totalMs": 13727,
+    "frame": {
+      "p50": 68,
+      "p95": 1194,
+      "max": 1439
+    },
+    "longTasks": {
+      "count": 42,
+      "totalMs": 11777,
+      "max": 1338
+    },
+    "heapMB": {
+      "before": 122,
+      "after": 351
+    },
+    "domNodes": {
+      "before": 3447,
+      "after": 30020
+    },
+    "layoutCount": 299,
+    "recalcStyleCount": 341,
+    "pages": 12,
+    "trackedEls": 59,
+    "trackedElsWithIdList": 59,
+    "maxIdsOnOneElement": 41
+  },
+  {
+    "doc": "SD-105/tracked-paste-schedule-accepted.docx",
+    "label": "accepted baseline",
+    "totalMs": 1992,
+    "frame": {
+      "p50": 33,
+      "p95": 41,
+      "max": 43
+    },
+    "longTasks": {
+      "count": 1,
+      "totalMs": 58,
+      "max": 58
+    },
+    "heapMB": {
+      "before": 121,
+      "after": 145
+    },
+    "domNodes": {
+      "before": 2266,
+      "after": 10040
+    },
+    "layoutCount": 69,
+    "recalcStyleCount": 88,
+    "pages": 12,
+    "trackedEls": 0,
+    "trackedElsWithIdList": 0,
+    "maxIdsOnOneElement": 0
+  },
+  {
+    "doc": "SD-105/synthetic-control-no-tracking.docx",
+    "label": "untracked control",
+    "totalMs": 1999,
+    "frame": {
+      "p50": 33,
+      "p95": 34,
+      "max": 35
+    },
+    "longTasks": {
+      "count": 1,
+      "totalMs": 57,
+      "max": 57
+    },
+    "heapMB": {
+      "before": 103,
+      "after": 119
+    },
+    "domNodes": {
+      "before": 1665,
+      "after": 6300
+    },
+    "layoutCount": 26,
+    "recalcStyleCount": 27,
+    "pages": 15,
+    "trackedEls": 0,
+    "trackedElsWithIdList": 0,
+    "maxIdsOnOneElement": 0
+  },
+  {
+    "doc": "SD-105/tracked-paste-schedule.docx",
+    "label": "tracked",
+    "trackedChanges": 158,
+    "idsOnElement": 1,
+    "typing": {
+      "settledAfterFirstKeyMs": 2656
+    },
+    "deleting": {
+      "settledAfterFirstKeyMs": 4694
+    },
+    "errors": [
+      {
+        "type": "onException",
+        "message": "section identity metadata could not be resolved from source signals"
+      }
+    ]
+  },
+  {
+    "doc": "SD-105/tracked-paste-schedule-accepted.docx",
+    "label": "accepted baseline",
+    "trackedChanges": 22,
+    "idsOnElement": 0,
+    "typing": {
+      "settledAfterFirstKeyMs": 1551
+    },
+    "deleting": {
+      "settledAfterFirstKeyMs": 753
+    },
+    "errors": [
+      {
+        "type": "onException",
+        "message": "section identity metadata could not be resolved from source signals"
+      }
+    ]
+  },
+  {
+    "doc": "SD-105/tracked-paste-schedule.docx",
+    "label": "tracked",
+    "clickWallMs": 8008,
+    "settleMs": 5,
+    "mutationCount": 47,
+    "maxFrameDuringWindow": 18,
+    "longTasksDuringWindow": {
+      "count": 0,
+      "totalMs": 0
+    },
+    "errors": [
+      {
+        "type": "onException",
+        "message": "section identity metadata could not be resolved from source signals"
+      }
+    ]
+  },
+  {
+    "doc": "SD-105/tracked-paste-schedule-accepted.docx",
+    "label": "accepted baseline",
+    "error": "no tracked-change element near the bottom"
+  },
+  {
+    "doc": "SD-105/synthetic-2000-tracked-insertions.docx",
+    "label": "synthetic-2000-insertions",
+    "steps": [
+      {
+        "step": 1,
+        "frameMs": 32,
+        "heapMB": 112
+      },
+      {
+        "step": 2,
+        "frameMs": 32,
+        "heapMB": 109
+      },
+      {
+        "step": 3,
+        "frameMs": 34,
+        "heapMB": 104
+      },
+      {
+        "step": 4,
+        "frameMs": 33,
+        "heapMB": 114
+      },
+      {
+        "step": 5,
+        "frameMs": 33,
+        "heapMB": 109
+      },
+      {
+        "step": 6,
+        "frameMs": 33,
+        "heapMB": 108
+      },
+      {
+        "step": 7,
+        "frameMs": 34,
+        "heapMB": 109
+      },
+      {
+        "step": 8,
+        "frameMs": 23197,
+        "heapMB": 445
+      },
+      {
+        "step": 9,
+        "frameMs": 11143,
+        "heapMB": 780
+      },
+      {
+        "step": 10,
+        "frameMs": 30908,
+        "heapMB": 778
+      },
+      {
+        "step": 11,
+        "frameMs": 8165,
+        "heapMB": 616
+      },
+      {
+        "step": 12,
+        "frameMs": 22270,
+        "heapMB": 784
+      },
+      {
+        "step": 13,
+        "frameMs": 22170,
+        "heapMB": 787
+      },
+      {
+        "step": 14,
+        "frameMs": 22161,
+        "heapMB": 777
+      },
+      {
+        "step": 15,
+        "frameMs": 10960,
+        "heapMB": 1117
+      },
+      {
+        "step": 16,
+        "frameMs": 33599,
+        "heapMB": 775
+      },
+      {
+        "stoppedEarly": true,
+        "reason": "time budget"
+      }
+    ]
+  }
+]

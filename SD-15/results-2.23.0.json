@@ -1,0 +1,180 @@
+{
+  "superdocVersion": "2.23.0",
+  "sdkVersion": "@superdoc/sdk 2.20.0",
+  "capturedIds": [
+    {
+      "id": "685762e8acd20906090b8c38",
+      "type": "deletion",
+      "blockId": "610AC16E",
+      "excerpt": "Scope\nOnly the provisions of this Agreement and Schedule 1 – {{Contract Scope}} and Price and ACME’s Conditions of Purchase which can be found at https://www.example.com/terms-of-purchase/ shall govern the purchase and the sale of the {{Contract Scope}}\nThe Supplier’s general or standard sales conditions will not apply to the sale and purchase of the {{Contract Scope}}"
+    },
+    {
+      "id": "48ebbb1d6c05dbf3c7f7f2bc",
+      "type": "structural",
+      "blockId": "72C71877",
+      "excerpt": "paragraph mark deletion (merge)"
+    },
+    {
+      "id": "6f8cba0257a9f5ead0946f45",
+      "type": "structural",
+      "blockId": "72C71877",
+      "excerpt": "paragraph mark deletion (merge)"
+    },
+    {
+      "id": "8b715112ded59c6afde4d5b3",
+      "type": "insertion",
+      "blockId": "72C71877",
+      "excerpt": " "
+    },
+    {
+      "id": "bd2c1608fc1f80102a5454db",
+      "type": "formatting",
+      "blockId": "5B028D6E",
+      "excerpt": "list formatting revision: numbering: {\"level\":0,\"numId\":2} → ∅, numberingNumId: 2 → ∅, numberingLevel: 0 → ∅"
+    },
+    {
+      "id": "3372a1e6f85fe43574436349",
+      "type": "deletion",
+      "blockId": "0BF8AD13",
+      "excerpt": "ACME and Supplier will keep this Agreement and all documents and information relating to this Agreement"
+    }
+  ],
+  "noRelistLog": [
+    {
+      "index": 0,
+      "id": "685762e8acd20906090b8c38",
+      "ok": true,
+      "removed": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "685762e8acd20906090b8c38"
+        }
+      ],
+      "invalidatedRefs": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "685762e8acd20906090b8c38"
+        }
+      ],
+      "remappedRefs": []
+    },
+    {
+      "index": 1,
+      "id": "48ebbb1d6c05dbf3c7f7f2bc",
+      "ok": true,
+      "removed": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "48ebbb1d6c05dbf3c7f7f2bc"
+        }
+      ],
+      "invalidatedRefs": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "48ebbb1d6c05dbf3c7f7f2bc"
+        }
+      ],
+      "remappedRefs": []
+    },
+    {
+      "index": 2,
+      "id": "6f8cba0257a9f5ead0946f45",
+      "ok": false,
+      "code": "TARGET_NOT_FOUND",
+      "message": "No tracked change with id \"6f8cba0257a9f5ead0946f45\"."
+    },
+    {
+      "index": 3,
+      "id": "8b715112ded59c6afde4d5b3",
+      "ok": true,
+      "removed": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "8b715112ded59c6afde4d5b3"
+        }
+      ],
+      "invalidatedRefs": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "8b715112ded59c6afde4d5b3"
+        }
+      ],
+      "remappedRefs": []
+    },
+    {
+      "index": 4,
+      "id": "bd2c1608fc1f80102a5454db",
+      "ok": true,
+      "removed": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "bd2c1608fc1f80102a5454db"
+        }
+      ],
+      "invalidatedRefs": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "bd2c1608fc1f80102a5454db"
+        }
+      ],
+      "remappedRefs": []
+    },
+    {
+      "index": 5,
+      "id": "3372a1e6f85fe43574436349",
+      "ok": true,
+      "removed": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "3372a1e6f85fe43574436349"
+        }
+      ],
+      "invalidatedRefs": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "3372a1e6f85fe43574436349"
+        }
+      ],
+      "remappedRefs": []
+    }
+  ],
+  "relistControlCompletedCleanly": false,
+  "staleFailure": {
+    "index": 2,
+    "id": "6f8cba0257a9f5ead0946f45",
+    "ok": false,
+    "code": "TARGET_NOT_FOUND",
+    "message": "No tracked change with id \"6f8cba0257a9f5ead0946f45\"."
+  },
+  "priorSuccessReceipt": {
+    "index": 1,
+    "id": "48ebbb1d6c05dbf3c7f7f2bc",
+    "ok": true,
+    "removed": [
+      {
+        "kind": "entity",
+        "entityType": "trackedChange",
+        "entityId": "48ebbb1d6c05dbf3c7f7f2bc"
+      }
+    ],
+    "invalidatedRefs": [
+      {
+        "kind": "entity",
+        "entityType": "trackedChange",
+        "entityId": "48ebbb1d6c05dbf3c7f7f2bc"
+      }
+    ],
+    "remappedRefs": []
+  },
+  "bugReproduces": true
+}

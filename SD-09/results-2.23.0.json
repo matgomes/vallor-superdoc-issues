@@ -1,0 +1,36 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES (UI/editor path) / FIXED (headless SDK text-range path)",
+  "headless": {
+    "sameRowPartial": {
+      "ok": true,
+      "deletedText": "osting\n900 per month",
+      "txId": "tx-84168af1-fcfd-4067-b645-eda0b022acc9",
+      "trackedChangeTotal": 1
+    },
+    "sameRowFull": {
+      "ok": true,
+      "deletedText": "Hosting\n900 per month",
+      "txId": "tx-b432786c-704a-4804-b0b4-86b65837889f",
+      "trackedChangeTotal": 1
+    },
+    "crossRowSameColumn": {
+      "ok": true,
+      "deletedText": "Hosting\n900 per month\nNet 45\nSupport",
+      "txId": "tx-044de242-526b-4b17-be84-1684c2621d04",
+      "trackedChangeTotal": 1
+    }
+  },
+  "browserUi": {
+    "totalBefore": 0,
+    "totalAfter": 0,
+    "errorsAfterBackspace": [
+      {
+        "type": "onException",
+        "code": "edit-rejected",
+        "message": "This edit couldn’t be completed. Adjust the selection and try again."
+      }
+    ],
+    "cellTextAfter": []
+  }
+}

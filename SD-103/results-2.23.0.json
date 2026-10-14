@@ -1,0 +1,18 @@
+{
+  "version": "2.23.0",
+  "fixture": "_fixtures/dpa-table-bearing-agreement.docx",
+  "blockId": "02000001",
+  "selectionApplyResult": {
+    "ok": true
+  },
+  "viewingModeTableContextImmediate": {
+    "inTable": true,
+    "tableNodeId": "tbl:02000001",
+    "rowIndex": 0,
+    "columnIndex": 0,
+    "cellNodeId": "tc:02000001",
+    "rows": 6,
+    "columns": 2
+  },
+  "viewingModeIsInTable": true
+}

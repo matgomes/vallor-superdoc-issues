@@ -1,0 +1,69 @@
+{
+  "version": "2.23.0",
+  "fixture": "_fixtures/dpa-multi-redline.docx",
+  "decidedChangeId": "4542f4bd2114f68261dc3011",
+  "acceptReceipt": {
+    "success": true,
+    "inserted": [],
+    "removed": [
+      {
+        "kind": "entity",
+        "entityType": "trackedChange",
+        "entityId": "4542f4bd2114f68261dc3011"
+      }
+    ],
+    "invalidatedRefs": [
+      {
+        "kind": "entity",
+        "entityType": "trackedChange",
+        "entityId": "4542f4bd2114f68261dc3011"
+      }
+    ],
+    "remappedRefs": [],
+    "affectedStories": [
+      {
+        "kind": "story",
+        "storyType": "body"
+      }
+    ],
+    "textRangeShifts": [],
+    "txId": "tx-393c6c14-78df-4e66-a71d-9cee429af6d6"
+  },
+  "reinstateAttempts": [
+    {
+      "decision": "undo",
+      "outcome": "threw",
+      "message": "track-changes decide:decision must be one of: accept, reject."
+    },
+    {
+      "decision": "reinstate",
+      "outcome": "threw",
+      "message": "track-changes decide:decision must be one of: accept, reject."
+    },
+    {
+      "decision": "pending",
+      "outcome": "threw",
+      "message": "track-changes decide:decision must be one of: accept, reject."
+    },
+    {
+      "decision": "undecided",
+      "outcome": "threw",
+      "message": "track-changes decide:decision must be one of: accept, reject."
+    },
+    {
+      "decision": "reopen",
+      "outcome": "threw",
+      "message": "track-changes decide:decision must be one of: accept, reject."
+    },
+    {
+      "decision": "unaccept",
+      "outcome": "threw",
+      "message": "track-changes decide:decision must be one of: accept, reject."
+    }
+  ],
+  "newlyCreatedChange": {
+    "author": "Probe",
+    "date": "2026-10-14T01:03:46.575Z",
+    "origin": "superdoc"
+  }
+}

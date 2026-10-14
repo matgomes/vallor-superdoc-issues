@@ -1,0 +1,105 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "sanityBoldVisible": {
+    "ok": true,
+    "result": {
+      "document": {
+        "path": "SD-08/whole-paragraph-deleted.docx",
+        "source": "path",
+        "byteLength": 3160,
+        "revision": 1
+      },
+      "target": {
+        "kind": "text",
+        "blockId": "00000001",
+        "range": {
+          "start": 0,
+          "end": 5
+        },
+        "story": {
+          "kind": "story",
+          "storyType": "body"
+        }
+      },
+      "resolvedRange": {
+        "from": 289,
+        "to": 352
+      },
+      "receipt": {
+        "success": true,
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-4fbc3ee1-6504-4fc7-9040-52a86b0b9dcf",
+        "resolution": {
+          "target": {
+            "kind": "text",
+            "blockId": "00000001",
+            "range": {
+              "start": 0,
+              "end": 5
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "range": {
+            "from": 289,
+            "to": 352
+          },
+          "text": "Intro",
+          "selectionTarget": {
+            "kind": "selection",
+            "start": {
+              "kind": "text",
+              "blockId": "00000001",
+              "offset": 0
+            },
+            "end": {
+              "kind": "text",
+              "blockId": "00000001",
+              "offset": 5
+            }
+          }
+        }
+      },
+      "changeMode": "direct",
+      "dryRun": false,
+      "context": {
+        "dirty": true,
+        "revision": 1
+      }
+    }
+  },
+  "boldSingleParagraphTracked": {
+    "ok": false,
+    "code": "TRACK_CHANGE_COMMAND_UNAVAILABLE",
+    "message": "format selection uses tracked coordinates; resolve the target in visible coordinates instead."
+  },
+  "boldCrossParagraphTracked": {
+    "ok": false,
+    "code": "TRACK_CHANGE_COMMAND_UNAVAILABLE",
+    "message": "text-range-cross-paragraph-tracked-coordinate-unsupported"
+  },
+  "highlightCrossParagraphTracked": {
+    "ok": false,
+    "code": "TRACK_CHANGE_COMMAND_UNAVAILABLE",
+    "message": "text-range-cross-paragraph-tracked-coordinate-unsupported"
+  },
+  "clearFormattingCrossParagraphTracked": {
+    "ok": false,
+    "code": "TRACK_CHANGE_COMMAND_UNAVAILABLE",
+    "message": "text-range-cross-paragraph-tracked-coordinate-unsupported"
+  },
+  "boldSingleParagraphVisibleCoords": {
+    "ok": false,
+    "code": "INVALID_ARGUMENT",
+    "message": "selection offsets exceed paragraph text."
+  }
+}

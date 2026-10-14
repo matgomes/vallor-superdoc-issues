@@ -1,0 +1,161 @@
+{
+  "version": "2.23.0",
+  "fixture": "_fixtures/dpa-multi-redline.docx",
+  "attempts": [
+    {
+      "label": "decide once (control)",
+      "outcome": "resolved",
+      "value": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "4542f4bd2114f68261dc3011"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "4542f4bd2114f68261dc3011"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-d57eed7e-b5c8-49c4-b78f-31165544adaf"
+      }
+    },
+    {
+      "label": "decide the same id again (already resolved)",
+      "outcome": "threw",
+      "message": "Tracked change \"4542f4bd2114f68261dc3011\" has already been resolved."
+    },
+    {
+      "label": "decide a nonexistent id",
+      "outcome": "threw",
+      "message": "No tracked change with id \"definitely-not-a-real-id\"."
+    },
+    {
+      "label": "decide {kind:ids} with one already-resolved id",
+      "outcome": "threw",
+      "message": "No tracked change with id \"4542f4bd2114f68261dc3011\"."
+    },
+    {
+      "label": "decide with a stale expectedRevision",
+      "outcome": "threw",
+      "message": "expected-revision not-a-real-revision does not match current revision 1."
+    },
+    {
+      "label": "setEditingRestriction(readOnly)",
+      "outcome": "resolved",
+      "value": {
+        "success": true,
+        "state": {
+          "editingRestriction": {
+            "mode": "readOnly",
+            "enforced": true,
+            "runtimeEnforced": true,
+            "passwordProtected": false,
+            "formattingRestricted": false
+          },
+          "writeProtection": {
+            "enabled": false,
+            "passwordProtected": false
+          },
+          "readOnlyRecommended": false
+        }
+      }
+    },
+    {
+      "label": "decide under readOnly protection",
+      "outcome": "resolved",
+      "value": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "5d9672c18fb663bb09068216"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "5d9672c18fb663bb09068216"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-264d8e72-b8ca-4fd9-885b-23c0ef5bcf94"
+      }
+    },
+    {
+      "label": "clearEditingRestriction",
+      "outcome": "resolved",
+      "value": {
+        "success": true,
+        "state": {
+          "editingRestriction": {
+            "mode": "readOnly",
+            "enforced": false,
+            "runtimeEnforced": false,
+            "passwordProtected": false,
+            "formattingRestricted": false
+          },
+          "writeProtection": {
+            "enabled": false,
+            "passwordProtected": false
+          },
+          "readOnlyRecommended": false
+        }
+      }
+    },
+    {
+      "label": "decide only the insert side of a replacement pair",
+      "outcome": "resolved",
+      "value": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "32bdd0517440e18e81f57d2f"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "32bdd0517440e18e81f57d2f"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-48cdc6b3-9d31-41c9-9b30-0b34b4a021d2"
+      }
+    }
+  ]
+}

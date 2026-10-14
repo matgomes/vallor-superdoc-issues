@@ -1,0 +1,36 @@
+{
+  "version": "2.23.0",
+  "fixture": "_fixtures/bookmark-x1-plain.docx",
+  "editedBlockId": "00000004",
+  "fingerprintsDiffer": true,
+  "attempts": [
+    {
+      "label": "natural {sourceSnapshot:before, targetSnapshot:after} (live doc is AFTER-state)",
+      "outcome": "resolved",
+      "hasChanges": false,
+      "baseFingerprint": "sha256-semantic:3be65174eded48a6ab24a4181b0bf2aec2448230464507f6a6c81c5c8a05b174",
+      "targetFingerprint": "sha256-semantic:3be65174eded48a6ab24a4181b0bf2aec2448230464507f6a6c81c5c8a05b174"
+    },
+    {
+      "label": "reversed {sourceSnapshot:after, targetSnapshot:before} (live doc is AFTER-state)",
+      "outcome": "resolved",
+      "hasChanges": true,
+      "baseFingerprint": "sha256-semantic:3be65174eded48a6ab24a4181b0bf2aec2448230464507f6a6c81c5c8a05b174",
+      "targetFingerprint": "sha256-semantic:6a4cebde8c0de66e730de68bebfb4571180e905beed40a6fc7a9679b5623fc2e"
+    },
+    {
+      "label": "spec-shape {targetSnapshot:before} only (implicit source = live AFTER-state)",
+      "outcome": "resolved",
+      "hasChanges": true,
+      "baseFingerprint": "sha256-semantic:3be65174eded48a6ab24a4181b0bf2aec2448230464507f6a6c81c5c8a05b174",
+      "targetFingerprint": "sha256-semantic:6a4cebde8c0de66e730de68bebfb4571180e905beed40a6fc7a9679b5623fc2e"
+    },
+    {
+      "label": "spec-shape {targetSnapshot:after} only (implicit source = live AFTER-state)",
+      "outcome": "resolved",
+      "hasChanges": false,
+      "baseFingerprint": "sha256-semantic:3be65174eded48a6ab24a4181b0bf2aec2448230464507f6a6c81c5c8a05b174",
+      "targetFingerprint": "sha256-semantic:3be65174eded48a6ab24a4181b0bf2aec2448230464507f6a6c81c5c8a05b174"
+    }
+  ]
+}

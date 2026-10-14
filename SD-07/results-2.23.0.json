@@ -1,0 +1,66 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "rawIds": {
+    "activeChangeIds": [
+      "tc|main%3A%2Fword%2Fdocument.xml|del|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cdel%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C100%7CwId%3A100",
+      "tc|main%3A%2Fword%2Fdocument.xml|del|word-deleted-paragraph-range|625c4c32"
+    ],
+    "listIds": [
+      "tc|main%3A%2Fword%2Fdocument.xml|del|word-deleted-paragraph-range|625c4c32"
+    ],
+    "errors": []
+  },
+  "paragraphLevel": {
+    "activeChangeIds": [],
+    "listTotal": 1,
+    "listTypes": [
+      {
+        "type": "structural",
+        "subtype": "paragraph-mark-deletion"
+      }
+    ],
+    "selectionSpansThreeBlocks": true,
+    "errors": []
+  },
+  "sanity": {
+    "listedType": "structural",
+    "listedSubtype": "paragraph-mark-deletion",
+    "emptyIdsDecide": {
+      "ok": false,
+      "code": "INVALID_TARGET",
+      "message": "track-changes decide:target.id is required."
+    },
+    "byRealId": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "5a9b7458f000f661ce861999"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "5a9b7458f000f661ce861999"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-59ad2767-def5-4108-8e98-4e07d9d926bc"
+      }
+    },
+    "trackedChangesAfter": 0
+  }
+}

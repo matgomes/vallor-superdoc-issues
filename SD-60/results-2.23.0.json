@@ -1,0 +1,29 @@
+{
+  "joinUnseeded": {
+    "roomMode": "join",
+    "editorIsNull": true,
+    "errors": [
+      {
+        "type": "onException",
+        "code": "collaboration-v2-room-missing",
+        "message": "SuperDoc v2 could not find a committed v2 collaboration room. No changes were made. Use roomMode: \"create\" only when creating a new room."
+      }
+    ]
+  },
+  "createFirst": {
+    "roomMode": "create",
+    "editorIsNull": false,
+    "errors": []
+  },
+  "createAgain": {
+    "roomMode": "create",
+    "editorIsNull": true,
+    "errors": [
+      {
+        "type": "onException",
+        "code": "collaboration-v2-room-already-exists",
+        "message": "SuperDoc v2 was asked to create a collaboration room that already exists. Use roomMode: \"join\" to open it."
+      }
+    ]
+  }
+}

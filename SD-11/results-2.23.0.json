@@ -1,0 +1,158 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "results": {
+    "blockDeleteTracked": {
+      "ok": false,
+      "code": "COMMAND_FAILED",
+      "message": "paragraph-tracked-wrapper-unsupported"
+    },
+    "blockDeleteDirect": {
+      "ok": false,
+      "code": "COMMAND_FAILED",
+      "message": "paragraph-tracked-wrapper-unsupported"
+    },
+    "blockDeleteRangeTracked": {
+      "ok": false,
+      "code": "COMMAND_FAILED",
+      "message": "unsupported-context"
+    },
+    "fieldResultTextDeleteAndReject": {
+      "deleteOutcome": {
+        "ok": true,
+        "result": {
+          "document": {
+            "path": "SD-11/indemnification-cross-reference.docx",
+            "source": "path",
+            "byteLength": 12967,
+            "revision": 1
+          },
+          "target": {
+            "kind": "text",
+            "blockId": "48E07913",
+            "range": {
+              "start": 23,
+              "end": 38
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "resolvedRange": {
+            "from": 3038,
+            "to": 3118
+          },
+          "receipt": {
+            "success": true,
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [
+              {
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                },
+                "atChar": 38,
+                "blockId": "48E07913",
+                "atCharInBlock": 23,
+                "delta": -15
+              }
+            ],
+            "txId": "tx-8ba8129d-b972-4b3b-ad06-8de212b0e577",
+            "resolution": {
+              "target": {
+                "kind": "text",
+                "blockId": "48E07913",
+                "range": {
+                  "start": 23,
+                  "end": 38
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "range": {
+                "from": 3038,
+                "to": 3118
+              },
+              "text": "Indemnification",
+              "selectionTarget": {
+                "kind": "selection",
+                "start": {
+                  "kind": "text",
+                  "blockId": "48E07913",
+                  "offset": 23
+                },
+                "end": {
+                  "kind": "text",
+                  "blockId": "48E07913",
+                  "offset": 38
+                }
+              }
+            },
+            "inserted": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "979c7eede1908c2528e12efd"
+              }
+            ]
+          },
+          "changeMode": "tracked",
+          "dryRun": false,
+          "context": {
+            "dirty": true,
+            "revision": 1
+          }
+        }
+      },
+      "rejectOutcome": {
+        "ok": true,
+        "result": {
+          "success": true,
+          "inserted": [],
+          "removed": [
+            {
+              "kind": "entity",
+              "entityType": "trackedChange",
+              "entityId": "979c7eede1908c2528e12efd"
+            }
+          ],
+          "invalidatedRefs": [
+            {
+              "kind": "entity",
+              "entityType": "trackedChange",
+              "entityId": "979c7eede1908c2528e12efd"
+            }
+          ],
+          "remappedRefs": [],
+          "affectedStories": [
+            {
+              "kind": "story",
+              "storyType": "body"
+            }
+          ],
+          "textRangeShifts": [
+            {
+              "story": {
+                "kind": "story",
+                "storyType": "body"
+              },
+              "atChar": 38,
+              "blockId": "48E07913",
+              "atCharInBlock": 23,
+              "delta": 15
+            }
+          ],
+          "txId": "tx-b6ad7f46-ddb6-4129-a2a4-28b0c3612657"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,922 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "NEEDS REPRO (not reproduced in this matrix)",
+  "invalidContextInRoomOnlyCount": 0,
+  "results": {
+    "two collaborators concurrent (B inserts, A decides)": {
+      "bInsert": {
+        "ok": true,
+        "result": {
+          "document": {
+            "path": "SD-01/dpa-table-cell-revisions.docx",
+            "source": "path",
+            "byteLength": 46153,
+            "revision": 2
+          },
+          "target": {
+            "kind": "text",
+            "blockId": "57A4D0A6",
+            "range": {
+              "start": 0,
+              "end": 0
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "resolvedRange": {
+            "from": 2611,
+            "to": 2611
+          },
+          "receipt": {
+            "success": true,
+            "resolution": {
+              "target": {
+                "kind": "text",
+                "blockId": "57A4D0A6",
+                "range": {
+                  "start": 0,
+                  "end": 0
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "range": {
+                "from": 2611,
+                "to": 2611
+              },
+              "selectionTarget": {
+                "kind": "selection",
+                "start": {
+                  "kind": "text",
+                  "blockId": "57A4D0A6",
+                  "offset": 0
+                },
+                "end": {
+                  "kind": "text",
+                  "blockId": "57A4D0A6",
+                  "offset": 0
+                }
+              }
+            },
+            "inserted": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "867b2db2ce09b14d1a3d11f1"
+              }
+            ],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [
+              {
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                },
+                "atChar": 0,
+                "blockId": "57A4D0A6",
+                "atCharInBlock": 0,
+                "delta": 14
+              }
+            ],
+            "txId": "tx-9949e1d3-5430-4de6-b177-236469b96d19"
+          },
+          "changeMode": "tracked",
+          "dryRun": false,
+          "context": {
+            "dirty": true,
+            "revision": 2
+          }
+        }
+      },
+      "aDecide": {
+        "ok": true,
+        "result": {
+          "success": true,
+          "inserted": [],
+          "removed": [
+            {
+              "kind": "entity",
+              "entityType": "trackedChange",
+              "entityId": "0d04441d5675f9a707ce4aab"
+            }
+          ],
+          "invalidatedRefs": [
+            {
+              "kind": "entity",
+              "entityType": "trackedChange",
+              "entityId": "0d04441d5675f9a707ce4aab"
+            }
+          ],
+          "remappedRefs": [],
+          "affectedStories": [
+            {
+              "kind": "story",
+              "storyType": "body"
+            }
+          ],
+          "textRangeShifts": [],
+          "txId": "tx-ebd37861-415f-4f66-9ed5-83d4f118efc1"
+        }
+      }
+    },
+    "decide by id": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-07c30019-d68a-48cf-b929-03da1a78025a"
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-f4cd7c51-0884-4868-bed4-41f9646eceb3"
+          }
+        }
+      }
+    },
+    "decide by range": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-0132e525-1989-4a85-9cb4-9f64ad6dfa8e"
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-82641122-e327-4c50-aa48-e869ef2fa79f"
+          }
+        }
+      }
+    },
+    "decide all": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "7be46b8490783391a90d4ef9"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "7be46b8490783391a90d4ef9"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-99740594-994c-4656-9402-bb8290de7cbd"
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "7be46b8490783391a90d4ef9"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "0d04441d5675f9a707ce4aab"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              },
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "7be46b8490783391a90d4ef9"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-6d116fe7-0746-49d3-b935-138486afc059"
+          }
+        }
+      }
+    },
+    "accept a change inside a table cell": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-03e9fa6c-1dfa-4e9a-a7ab-17e00510e0b1"
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "inserted": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "cb08ad3345bd788dab89befb"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-f1e9836f-9e41-41ba-8eb6-df5cded3ae30"
+          }
+        }
+      }
+    },
+    "blocks.delete": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "deleted": {
+              "kind": "block",
+              "nodeType": "paragraph",
+              "nodeId": "3EAAE701"
+            },
+            "deletedBlock": {
+              "ordinal": 2,
+              "nodeId": "3EAAE701",
+              "nodeType": "paragraph",
+              "textPreview": "DATA PROCESSING ADDENDUM"
+            },
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "c38ab23b4936e2fea48fcfd8"
+              }
+            ],
+            "invalidatedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-076676bb-9af2-4a7c-88f1-f3189dd9f69b"
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "deleted": {
+              "kind": "block",
+              "nodeType": "paragraph",
+              "nodeId": "3EAAE701"
+            },
+            "deletedBlock": {
+              "ordinal": 2,
+              "nodeId": "3EAAE701",
+              "nodeType": "paragraph",
+              "textPreview": "DATA PROCESSING ADDENDUM"
+            },
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "c38ab23b4936e2fea48fcfd8"
+              }
+            ],
+            "invalidatedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-1110febe-0037-41ac-ac77-5907f79dc24a"
+          }
+        }
+      }
+    },
+    "replace across a bookmark marker": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": false,
+          "code": "COMMAND_FAILED",
+          "message": "text-range-in-bookmark: selection must preserve both bookmark markers."
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": false,
+          "code": "COMMAND_FAILED",
+          "message": "text-range-in-bookmark: selection must preserve both bookmark markers."
+        }
+      }
+    },
+    "text rewrite (scoped replace within one block)": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "document": {
+              "path": "SD-01/bookmark-x2-around-text.docx",
+              "source": "path",
+              "byteLength": 2571,
+              "revision": 1
+            },
+            "target": {
+              "kind": "text",
+              "blockId": "00000004",
+              "range": {
+                "start": 0,
+                "end": 29
+              },
+              "story": {
+                "kind": "story",
+                "storyType": "body"
+              }
+            },
+            "resolvedRange": {
+              "from": 1008,
+              "to": 1095
+            },
+            "receipt": {
+              "success": true,
+              "resolution": {
+                "target": {
+                  "kind": "text",
+                  "blockId": "00000004",
+                  "range": {
+                    "start": 0,
+                    "end": 29
+                  },
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  }
+                },
+                "range": {
+                  "from": 1008,
+                  "to": 1095
+                },
+                "selectionTarget": {
+                  "kind": "selection",
+                  "start": {
+                    "kind": "text",
+                    "blockId": "00000004",
+                    "offset": 0
+                  },
+                  "end": {
+                    "kind": "text",
+                    "blockId": "00000004",
+                    "offset": 29
+                  }
+                }
+              },
+              "inserted": [
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "22f55e312cccde23b8d79c9c"
+                },
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "63b8e7a547fcca06f80e4398"
+                },
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "0b257458657b8fafc34e31af"
+                },
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "f2e429cebf2a36bbaf31b32d"
+                }
+              ],
+              "affectedStories": [
+                {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              ],
+              "textRangeShifts": [
+                {
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  },
+                  "atChar": 344,
+                  "blockId": "00000004",
+                  "atCharInBlock": 8,
+                  "delta": -2
+                },
+                {
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  },
+                  "atChar": 354,
+                  "blockId": "00000004",
+                  "atCharInBlock": 18,
+                  "delta": 5
+                },
+                {
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  },
+                  "atChar": 359,
+                  "blockId": "00000004",
+                  "atCharInBlock": 23,
+                  "delta": -1
+                }
+              ],
+              "txId": "tx-33e26ce7-20ed-4318-9944-23c9fa4c3a39"
+            },
+            "changeMode": "tracked",
+            "dryRun": false,
+            "context": {
+              "dirty": true,
+              "revision": 1
+            }
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "document": {
+              "path": "SD-01/bookmark-x2-around-text.docx",
+              "source": "path",
+              "byteLength": 2571,
+              "revision": 2
+            },
+            "target": {
+              "kind": "text",
+              "blockId": "00000004",
+              "range": {
+                "start": 0,
+                "end": 29
+              },
+              "story": {
+                "kind": "story",
+                "storyType": "body"
+              }
+            },
+            "resolvedRange": {
+              "from": 968,
+              "to": 1055
+            },
+            "receipt": {
+              "success": true,
+              "resolution": {
+                "target": {
+                  "kind": "text",
+                  "blockId": "00000004",
+                  "range": {
+                    "start": 0,
+                    "end": 29
+                  },
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  }
+                },
+                "range": {
+                  "from": 968,
+                  "to": 1055
+                },
+                "selectionTarget": {
+                  "kind": "selection",
+                  "start": {
+                    "kind": "text",
+                    "blockId": "00000004",
+                    "offset": 0
+                  },
+                  "end": {
+                    "kind": "text",
+                    "blockId": "00000004",
+                    "offset": 29
+                  }
+                }
+              },
+              "inserted": [
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "5948ac6ee05b8174e3380d9f"
+                },
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "d8a3833bf7db797a4db947ba"
+                },
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "e5ab33d6c03bd27bbf334f85"
+                },
+                {
+                  "kind": "entity",
+                  "entityType": "trackedChange",
+                  "entityId": "91c9b3bcc7b236a271254401"
+                }
+              ],
+              "affectedStories": [
+                {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              ],
+              "textRangeShifts": [
+                {
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  },
+                  "atChar": 344,
+                  "blockId": "00000004",
+                  "atCharInBlock": 8,
+                  "delta": -2
+                },
+                {
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  },
+                  "atChar": 354,
+                  "blockId": "00000004",
+                  "atCharInBlock": 18,
+                  "delta": 5
+                },
+                {
+                  "story": {
+                    "kind": "story",
+                    "storyType": "body"
+                  },
+                  "atChar": 359,
+                  "blockId": "00000004",
+                  "atCharInBlock": 23,
+                  "delta": -1
+                }
+              ],
+              "txId": "tx-c30caf0c-98a9-4077-af22-789dea5c81bc"
+            },
+            "changeMode": "tracked",
+            "dryRun": false,
+            "context": {
+              "dirty": true,
+              "revision": 2
+            }
+          }
+        }
+      }
+    },
+    "insert table rows": {
+      "outOfRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "table": {
+              "kind": "block",
+              "nodeType": "table",
+              "nodeId": "tbl:02000001"
+            },
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "insertedFirstBlockId": "7FBCDFDF",
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "8d31e6970811398cbb86d1bc"
+              }
+            ]
+          }
+        }
+      },
+      "inRoom": {
+        "capability": {
+          "available": {
+            "kind": "supported"
+          }
+        },
+        "outcome": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "table": {
+              "kind": "block",
+              "nodeType": "table",
+              "nodeId": "tbl:02000001"
+            },
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "insertedFirstBlockId": "4DC2FC3C",
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "e8fd374edac8ec7e529a6de0"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

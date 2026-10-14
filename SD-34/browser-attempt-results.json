@@ -1,0 +1,195 @@
+{
+  "superdocTarget": "2.23.0",
+  "sdkTarget": "@superdoc/sdk 2.20.0",
+  "timestamp": "2026-10-14T01:15:49.797Z",
+  "mode": "suggesting (live collaboration room, bare Hocuspocus)",
+  "uiCrossCellAttempted": {
+    "attempted": true
+  },
+  "perCellDeletes": [
+    {
+      "cell": "tc:02000003",
+      "columnIndex": 0,
+      "result": {
+        "success": true,
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [
+          {
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            },
+            "atChar": 24548,
+            "blockId": "02000003",
+            "atCharInBlock": 0,
+            "delta": -3
+          }
+        ],
+        "txId": "tx-8574e67f-a5e5-44f1-b40a-8b45c8a621e1",
+        "resolution": {
+          "target": {
+            "kind": "text",
+            "blockId": "02000003",
+            "range": {
+              "start": 0,
+              "end": 3
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "range": {
+            "from": 66417,
+            "to": 66497
+          },
+          "text": "Cor",
+          "selectionTarget": {
+            "kind": "selection",
+            "start": {
+              "kind": "text",
+              "blockId": "02000003",
+              "offset": 0
+            },
+            "end": {
+              "kind": "text",
+              "blockId": "02000003",
+              "offset": 3
+            }
+          }
+        },
+        "inserted": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|A9FDAA47%7CwId%3A111"
+          }
+        ]
+      }
+    },
+    {
+      "cell": "tc:02000004",
+      "columnIndex": 1,
+      "result": {
+        "success": true,
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [
+          {
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            },
+            "atChar": 24578,
+            "blockId": "02000004",
+            "atCharInBlock": 0,
+            "delta": -3
+          }
+        ],
+        "txId": "tx-c2d990d6-c497-45e8-bd6c-d6fb543759b3",
+        "resolution": {
+          "target": {
+            "kind": "text",
+            "blockId": "02000004",
+            "range": {
+              "start": 0,
+              "end": 3
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "range": {
+            "from": 66752,
+            "to": 66832
+          },
+          "text": "[Cu",
+          "selectionTarget": {
+            "kind": "selection",
+            "start": {
+              "kind": "text",
+              "blockId": "02000004",
+              "offset": 0
+            },
+            "end": {
+              "kind": "text",
+              "blockId": "02000004",
+              "offset": 3
+            }
+          }
+        },
+        "inserted": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|FDF0CC52%7CwId%3A113"
+          }
+        ]
+      }
+    }
+  ],
+  "typedInCell": true,
+  "exportResult": {
+    "ok": true,
+    "byteLength": 42842
+  },
+  "saveShapedMethodsFound": {
+    "sdKeys": [
+      "getCollaborationConnectionState",
+      "upgradeToCollaboration",
+      "save"
+    ],
+    "uiKeys": []
+  },
+  "sdSaveResult": {
+    "outcome": "resolved"
+  },
+  "steps": [
+    {
+      "label": "00-initial",
+      "errors": [],
+      "watchHits": []
+    },
+    {
+      "label": "01-after-ui-cross-cell-backspace",
+      "errors": [],
+      "watchHits": []
+    },
+    {
+      "label": "02-after-doc-api-per-cell-replay",
+      "errors": [],
+      "watchHits": []
+    },
+    {
+      "label": "03-after-undo-redo",
+      "errors": [],
+      "watchHits": []
+    },
+    {
+      "label": "04-after-typing-in-cell",
+      "errors": [],
+      "watchHits": []
+    },
+    {
+      "label": "05-after-export",
+      "errors": [],
+      "watchHits": []
+    },
+    {
+      "label": "06-after-sd-save-call",
+      "errors": [],
+      "watchHits": []
+    }
+  ],
+  "watchHitsAnywhere": []
+}

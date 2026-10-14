@@ -1,0 +1,98 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "headless": {
+    "trackedChangesBefore": 1,
+    "rangeDecide": {
+      "ok": false,
+      "code": "TARGET_NOT_FOUND",
+      "message": "trackChanges.decide range: selected range did not overlap any active tracked change."
+    },
+    "sanityDecide": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "210ea7831f6b3f476d402bee"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "210ea7831f6b3f476d402bee"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-7e0adabf-bc28-4e39-8368-181769779bb3"
+      }
+    },
+    "sanityTrackedChangesAfter": 0
+  },
+  "browserResult": {
+    "setResult": {
+      "ok": true,
+      "mode": "range"
+    },
+    "selectionSpansThreeBlocks": true,
+    "activeChangeIds": [
+      "tc|main%3A%2Fword%2Fdocument.xml|del|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cdel%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C100%7CwId%3A100",
+      "tc|main%3A%2Fword%2Fdocument.xml|del|word-deleted-paragraph-range|625c4c32"
+    ],
+    "decideByRange": {
+      "ok": true,
+      "result": {
+        "success": false,
+        "failure": {
+          "code": "TARGET_NOT_FOUND",
+          "message": "trackChanges.decide range: selected range did not overlap any active tracked change."
+        }
+      }
+    },
+    "trackedChangesAfterRangeAttempt": 1,
+    "decideByIds": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|word-deleted-paragraph-range|625c4c32"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|word-deleted-paragraph-range|625c4c32"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-66e3d75a-1978-49ba-aab4-a2d4c18e409b"
+      }
+    },
+    "trackedChangesAfterIdsAttempt": 0,
+    "textAfter": "Intro paragraph that stays.Closing paragraph that stays.",
+    "errors": []
+  }
+}

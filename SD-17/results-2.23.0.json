@@ -1,0 +1,51 @@
+{
+  "control_single_accept_on_structural_change": {
+    "targetId": "tc|main%3A%2Fword%2Fdocument.xml|structural-paragraph-mark-deletion|struct%3Amain%3A%2Fword%2Fdocument.xml%7Cparagraph-mark-deletion%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C129%7C%231",
+    "result": {
+      "success": true,
+      "inserted": [],
+      "removed": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "tc|main%3A%2Fword%2Fdocument.xml|structural-paragraph-mark-deletion|struct%3Amain%3A%2Fword%2Fdocument.xml%7Cparagraph-mark-deletion%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C129%7C%231"
+        }
+      ],
+      "invalidatedRefs": [
+        {
+          "kind": "entity",
+          "entityType": "trackedChange",
+          "entityId": "tc|main%3A%2Fword%2Fdocument.xml|structural-paragraph-mark-deletion|struct%3Amain%3A%2Fword%2Fdocument.xml%7Cparagraph-mark-deletion%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C129%7C%231"
+        }
+      ],
+      "remappedRefs": [],
+      "affectedStories": [
+        {
+          "kind": "story",
+          "storyType": "body"
+        }
+      ],
+      "textRangeShifts": [],
+      "txId": "tx-6f39156e-4fad-4993-aef6-88b25bce4b82"
+    },
+    "errorsObserved": []
+  },
+  "refused_accept_all": {
+    "beforeCount": 2,
+    "result": {
+      "success": false,
+      "failure": {
+        "code": "INVALID_INPUT",
+        "message": "invalid-input"
+      }
+    },
+    "errorsObserved": [],
+    "snapshotAfterRefusal": {
+      "status": "pending",
+      "items": [],
+      "total": 0,
+      "activeId": null,
+      "authors": []
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "hasZoomApi": true,
+  "repeatedAtSameWidth": [
+    {
+      "mode": "fit-width",
+      "value": 100,
+      "fitZoom": 157,
+      "min": 10,
+      "max": 100
+    },
+    {
+      "mode": "fit-width",
+      "value": 100,
+      "fitZoom": 157,
+      "min": 10,
+      "max": 100
+    },
+    {
+      "mode": "fit-width",
+      "value": 100,
+      "fitZoom": 157,
+      "min": 10,
+      "max": 100
+    },
+    {
+      "mode": "fit-width",
+      "value": 100,
+      "fitZoom": 157,
+      "min": 10,
+      "max": 100
+    },
+    {
+      "mode": "fit-width",
+      "value": 100,
+      "fitZoom": 157,
+      "min": 10,
+      "max": 100
+    }
+  ],
+  "stableAtSameWidth": true,
+  "acrossWidths": [
+    {
+      "width": 1280,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 100,
+        "fitZoom": 157,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 1280,
+        "documentWidth": 816,
+        "fitZoom": 157
+      }
+    },
+    {
+      "width": 1000,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 100,
+        "fitZoom": 123,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 1000,
+        "documentWidth": 816,
+        "fitZoom": 123
+      }
+    },
+    {
+      "width": 1280,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 100,
+        "fitZoom": 157,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 1280,
+        "documentWidth": 816,
+        "fitZoom": 157
+      }
+    },
+    {
+      "width": 1500,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 100,
+        "fitZoom": 184,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 1500,
+        "documentWidth": 816,
+        "fitZoom": 184
+      }
+    },
+    {
+      "width": 900,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 100,
+        "fitZoom": 110,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 900,
+        "documentWidth": 816,
+        "fitZoom": 110
+      }
+    },
+    {
+      "width": 600,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 74,
+        "fitZoom": 74,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 600,
+        "documentWidth": 816,
+        "fitZoom": 74
+      }
+    },
+    {
+      "width": 400,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 49,
+        "fitZoom": 49,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 400,
+        "documentWidth": 816,
+        "fitZoom": 49
+      }
+    },
+    {
+      "width": 816,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 100,
+        "fitZoom": 100,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 816,
+        "documentWidth": 816,
+        "fitZoom": 100
+      }
+    },
+    {
+      "width": 300,
+      "zoom": {
+        "mode": "fit-width",
+        "value": 37,
+        "fitZoom": 37,
+        "min": 10,
+        "max": 100
+      },
+      "metrics": {
+        "availableWidth": 300,
+        "documentWidth": 816,
+        "fitZoom": 37
+      }
+    }
+  ],
+  "zoomTracksWidth": true,
+  "documentWidthStable": true,
+  "narrowPaneDoubleCall": {
+    "paneWidth": 500,
+    "firstCall": {
+      "mode": "fit-width",
+      "value": 61,
+      "fitZoom": 61,
+      "min": 10,
+      "max": 100
+    },
+    "secondCall": {
+      "mode": "fit-width",
+      "value": 61,
+      "fitZoom": 61,
+      "min": 10,
+      "max": 100
+    },
+    "pageWidth": 816,
+    "expectedZoomPercent": 61,
+    "identicalAcrossCalls": true,
+    "matchesPaneWidthOverPageWidthRatio": true
+  },
+  "consoleErrors": [],
+  "reproduces": false
+}

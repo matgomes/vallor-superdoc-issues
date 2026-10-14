@@ -1,0 +1,1018 @@
+{
+  "hostPid": "5438",
+  "iterationsCompleted": 200,
+  "stoppedReason": "max-iterations",
+  "crashInfo": {
+    "crashed": false,
+    "error": null,
+    "atIteration": null
+  },
+  "disposeOutcome": {
+    "succeeded": true,
+    "error": null
+  },
+  "memoryCurve": [
+    {
+      "iterationNumber": 1,
+      "t": 521,
+      "rssMb": 367
+    },
+    {
+      "iterationNumber": 2,
+      "t": 924,
+      "rssMb": 408
+    },
+    {
+      "iterationNumber": 3,
+      "t": 1303,
+      "rssMb": 451
+    },
+    {
+      "iterationNumber": 4,
+      "t": 1685,
+      "rssMb": 479
+    },
+    {
+      "iterationNumber": 5,
+      "t": 2056,
+      "rssMb": 481
+    },
+    {
+      "iterationNumber": 6,
+      "t": 2426,
+      "rssMb": 485
+    },
+    {
+      "iterationNumber": 7,
+      "t": 2785,
+      "rssMb": 489
+    },
+    {
+      "iterationNumber": 8,
+      "t": 3160,
+      "rssMb": 491
+    },
+    {
+      "iterationNumber": 9,
+      "t": 3523,
+      "rssMb": 493
+    },
+    {
+      "iterationNumber": 10,
+      "t": 3894,
+      "rssMb": 495
+    },
+    {
+      "iterationNumber": 11,
+      "t": 4256,
+      "rssMb": 498
+    },
+    {
+      "iterationNumber": 12,
+      "t": 4621,
+      "rssMb": 498
+    },
+    {
+      "iterationNumber": 13,
+      "t": 4991,
+      "rssMb": 500
+    },
+    {
+      "iterationNumber": 14,
+      "t": 5364,
+      "rssMb": 501
+    },
+    {
+      "iterationNumber": 15,
+      "t": 5753,
+      "rssMb": 512
+    },
+    {
+      "iterationNumber": 16,
+      "t": 6163,
+      "rssMb": 523
+    },
+    {
+      "iterationNumber": 17,
+      "t": 6537,
+      "rssMb": 525
+    },
+    {
+      "iterationNumber": 18,
+      "t": 6917,
+      "rssMb": 525
+    },
+    {
+      "iterationNumber": 19,
+      "t": 7312,
+      "rssMb": 536
+    },
+    {
+      "iterationNumber": 20,
+      "t": 7676,
+      "rssMb": 537
+    },
+    {
+      "iterationNumber": 21,
+      "t": 8048,
+      "rssMb": 540
+    },
+    {
+      "iterationNumber": 22,
+      "t": 8425,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 23,
+      "t": 8786,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 24,
+      "t": 9152,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 25,
+      "t": 9517,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 26,
+      "t": 9876,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 27,
+      "t": 10247,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 28,
+      "t": 10614,
+      "rssMb": 543
+    },
+    {
+      "iterationNumber": 29,
+      "t": 11020,
+      "rssMb": 550
+    },
+    {
+      "iterationNumber": 30,
+      "t": 11401,
+      "rssMb": 551
+    },
+    {
+      "iterationNumber": 31,
+      "t": 11771,
+      "rssMb": 551
+    },
+    {
+      "iterationNumber": 32,
+      "t": 12171,
+      "rssMb": 551
+    },
+    {
+      "iterationNumber": 33,
+      "t": 12555,
+      "rssMb": 552
+    },
+    {
+      "iterationNumber": 34,
+      "t": 12926,
+      "rssMb": 553
+    },
+    {
+      "iterationNumber": 35,
+      "t": 13299,
+      "rssMb": 553
+    },
+    {
+      "iterationNumber": 36,
+      "t": 13659,
+      "rssMb": 553
+    },
+    {
+      "iterationNumber": 37,
+      "t": 14030,
+      "rssMb": 553
+    },
+    {
+      "iterationNumber": 38,
+      "t": 14387,
+      "rssMb": 553
+    },
+    {
+      "iterationNumber": 39,
+      "t": 14754,
+      "rssMb": 553
+    },
+    {
+      "iterationNumber": 40,
+      "t": 15131,
+      "rssMb": 554
+    },
+    {
+      "iterationNumber": 41,
+      "t": 15492,
+      "rssMb": 554
+    },
+    {
+      "iterationNumber": 42,
+      "t": 15876,
+      "rssMb": 554
+    },
+    {
+      "iterationNumber": 43,
+      "t": 16257,
+      "rssMb": 554
+    },
+    {
+      "iterationNumber": 44,
+      "t": 16661,
+      "rssMb": 555
+    },
+    {
+      "iterationNumber": 45,
+      "t": 17056,
+      "rssMb": 559
+    },
+    {
+      "iterationNumber": 46,
+      "t": 17423,
+      "rssMb": 559
+    },
+    {
+      "iterationNumber": 47,
+      "t": 17792,
+      "rssMb": 559
+    },
+    {
+      "iterationNumber": 48,
+      "t": 18157,
+      "rssMb": 559
+    },
+    {
+      "iterationNumber": 49,
+      "t": 18521,
+      "rssMb": 559
+    },
+    {
+      "iterationNumber": 50,
+      "t": 18890,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 51,
+      "t": 19287,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 52,
+      "t": 19660,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 53,
+      "t": 20031,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 54,
+      "t": 20395,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 55,
+      "t": 20771,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 56,
+      "t": 21145,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 57,
+      "t": 21522,
+      "rssMb": 561
+    },
+    {
+      "iterationNumber": 58,
+      "t": 21901,
+      "rssMb": 562
+    },
+    {
+      "iterationNumber": 59,
+      "t": 22282,
+      "rssMb": 562
+    },
+    {
+      "iterationNumber": 60,
+      "t": 22678,
+      "rssMb": 563
+    },
+    {
+      "iterationNumber": 61,
+      "t": 23047,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 62,
+      "t": 23419,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 63,
+      "t": 23783,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 64,
+      "t": 24148,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 65,
+      "t": 24515,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 66,
+      "t": 24886,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 67,
+      "t": 25261,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 68,
+      "t": 25632,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 69,
+      "t": 26010,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 70,
+      "t": 26394,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 71,
+      "t": 26763,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 72,
+      "t": 27128,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 73,
+      "t": 27498,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 74,
+      "t": 27868,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 75,
+      "t": 28264,
+      "rssMb": 564
+    },
+    {
+      "iterationNumber": 76,
+      "t": 28640,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 77,
+      "t": 29016,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 78,
+      "t": 29382,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 79,
+      "t": 29760,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 80,
+      "t": 30126,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 81,
+      "t": 30494,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 82,
+      "t": 30861,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 83,
+      "t": 31233,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 84,
+      "t": 31611,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 85,
+      "t": 31975,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 86,
+      "t": 32362,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 87,
+      "t": 32723,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 88,
+      "t": 33093,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 89,
+      "t": 33481,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 90,
+      "t": 33864,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 91,
+      "t": 34252,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 92,
+      "t": 34629,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 93,
+      "t": 35010,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 94,
+      "t": 35392,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 95,
+      "t": 35756,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 96,
+      "t": 36132,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 97,
+      "t": 36504,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 98,
+      "t": 36885,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 99,
+      "t": 37264,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 100,
+      "t": 37639,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 101,
+      "t": 38039,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 102,
+      "t": 38408,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 103,
+      "t": 38800,
+      "rssMb": 565
+    },
+    {
+      "iterationNumber": 104,
+      "t": 39177,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 105,
+      "t": 39541,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 106,
+      "t": 39913,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 107,
+      "t": 40287,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 108,
+      "t": 40651,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 109,
+      "t": 41030,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 110,
+      "t": 41388,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 111,
+      "t": 41767,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 112,
+      "t": 42152,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 113,
+      "t": 42514,
+      "rssMb": 566
+    },
+    {
+      "iterationNumber": 114,
+      "t": 42896,
+      "rssMb": 567
+    },
+    {
+      "iterationNumber": 115,
+      "t": 43263,
+      "rssMb": 567
+    },
+    {
+      "iterationNumber": 116,
+      "t": 43627,
+      "rssMb": 567
+    },
+    {
+      "iterationNumber": 117,
+      "t": 44011,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 118,
+      "t": 44386,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 119,
+      "t": 44781,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 120,
+      "t": 45169,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 121,
+      "t": 45540,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 122,
+      "t": 45917,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 123,
+      "t": 46277,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 124,
+      "t": 46640,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 125,
+      "t": 47019,
+      "rssMb": 568
+    },
+    {
+      "iterationNumber": 126,
+      "t": 47393,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 127,
+      "t": 47772,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 128,
+      "t": 48135,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 129,
+      "t": 48504,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 130,
+      "t": 48883,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 131,
+      "t": 49263,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 132,
+      "t": 49636,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 133,
+      "t": 50007,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 134,
+      "t": 50364,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 135,
+      "t": 50755,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 136,
+      "t": 51135,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 137,
+      "t": 51519,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 138,
+      "t": 51899,
+      "rssMb": 569
+    },
+    {
+      "iterationNumber": 139,
+      "t": 52325,
+      "rssMb": 608
+    },
+    {
+      "iterationNumber": 140,
+      "t": 52692,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 141,
+      "t": 53065,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 142,
+      "t": 53418,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 143,
+      "t": 53782,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 144,
+      "t": 54143,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 145,
+      "t": 54511,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 146,
+      "t": 54867,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 147,
+      "t": 55236,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 148,
+      "t": 55602,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 149,
+      "t": 55979,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 150,
+      "t": 56348,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 151,
+      "t": 56715,
+      "rssMb": 612
+    },
+    {
+      "iterationNumber": 152,
+      "t": 57090,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 153,
+      "t": 57481,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 154,
+      "t": 57860,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 155,
+      "t": 58232,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 156,
+      "t": 58593,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 157,
+      "t": 58961,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 158,
+      "t": 59321,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 159,
+      "t": 59687,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 160,
+      "t": 60047,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 161,
+      "t": 60414,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 162,
+      "t": 60778,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 163,
+      "t": 61152,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 164,
+      "t": 61519,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 165,
+      "t": 61884,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 166,
+      "t": 62255,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 167,
+      "t": 62642,
+      "rssMb": 613
+    },
+    {
+      "iterationNumber": 168,
+      "t": 63005,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 169,
+      "t": 63377,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 170,
+      "t": 63732,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 171,
+      "t": 64138,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 172,
+      "t": 64587,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 173,
+      "t": 64969,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 174,
+      "t": 65355,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 175,
+      "t": 65730,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 176,
+      "t": 66113,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 177,
+      "t": 66502,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 178,
+      "t": 66865,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 179,
+      "t": 67235,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 180,
+      "t": 67602,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 181,
+      "t": 67976,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 182,
+      "t": 68363,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 183,
+      "t": 68724,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 184,
+      "t": 69106,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 185,
+      "t": 69478,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 186,
+      "t": 69839,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 187,
+      "t": 70217,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 188,
+      "t": 70581,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 189,
+      "t": 70949,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 190,
+      "t": 71323,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 191,
+      "t": 71691,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 192,
+      "t": 72082,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 193,
+      "t": 72467,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 194,
+      "t": 72897,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 195,
+      "t": 73292,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 196,
+      "t": 73653,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 197,
+      "t": 74051,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 198,
+      "t": 74433,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 199,
+      "t": 74802,
+      "rssMb": 614
+    },
+    {
+      "iterationNumber": 200,
+      "t": 75183,
+      "rssMb": 614
+    }
+  ],
+  "peakRssMb": 614,
+  "startRssMb": 367
+}

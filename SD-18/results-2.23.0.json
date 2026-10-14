@@ -1,0 +1,61 @@
+{
+  "version": "superdoc 2.23.0 / @superdoc/sdk 2.20.0",
+  "defaultState": {
+    "layoutEngineOptionsMode": "review",
+    "insertionTextVisible": true,
+    "insertionStillMarkedAsTracked": true
+  },
+  "results": [
+    {
+      "mode": "final",
+      "callResult": {
+        "threw": false
+      },
+      "stateAfterCall": {
+        "layoutEngineOptionsMode": "final",
+        "insertionTextVisible": true,
+        "insertionStillMarkedAsTracked": true
+      }
+    },
+    {
+      "mode": "original",
+      "callResult": {
+        "threw": false
+      },
+      "stateAfterCall": {
+        "layoutEngineOptionsMode": "original",
+        "insertionTextVisible": false,
+        "insertionStillMarkedAsTracked": false
+      }
+    },
+    {
+      "mode": "off",
+      "callResult": {
+        "threw": false
+      },
+      "stateAfterCall": {
+        "layoutEngineOptionsMode": "off",
+        "insertionTextVisible": true,
+        "insertionStillMarkedAsTracked": false
+      }
+    },
+    {
+      "mode": "review",
+      "callResult": {
+        "threw": false
+      },
+      "stateAfterCall": {
+        "layoutEngineOptionsMode": "review",
+        "insertionTextVisible": true,
+        "insertionStillMarkedAsTracked": false
+      }
+    }
+  ],
+  "errors": [],
+  "findings": {
+    "configFieldAlwaysUpdates": true,
+    "modeFinalIsVisualNoop": true,
+    "modeOriginalWorksCorrectly": true
+  },
+  "verdict": "PARTIAL REPRODUCTION: config.layoutEngineOptions.trackedChanges.mode updates for every call (not a no-op at the config layer, contradicting the prior static-analysis claim), and mode:\"original\" correctly hides the tracked insertion from rendered text/markdown. But mode:\"final\" (the production-relevant \"clean view\" mode) is a visual no-op: the inserted text stays rendered with the same track-insert-dec/highlighted markup as the default review mode — no visual distinction from an unresolved tracked change."
+}

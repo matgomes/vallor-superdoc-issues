@@ -1,0 +1,21 @@
+{
+  "atTop": {
+    "total": 1,
+    "listStatus": "ready"
+  },
+  "atBottom": {
+    "total": 0,
+    "listStatus": "ready"
+  },
+  "backAtTop": {
+    "total": 1,
+    "listStatus": "ready"
+  },
+  "trackChangesAtTop": {
+    "total": 0
+  },
+  "trackChangesAtBottom": {
+    "total": 0
+  },
+  "errors": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": "superdoc 2.23.0 / @superdoc/sdk 2.20.0",
+  "export.toDocx refused in collaboration (all modes)": {
+    "original": {
+      "threw": true,
+      "message": "The operation is unavailable while collaboration is active.",
+      "code": "CAPABILITY_UNSUPPORTED"
+    },
+    "review-preserving": {
+      "threw": true,
+      "message": "The operation is unavailable while collaboration is active.",
+      "code": "CAPABILITY_UNSUPPORTED"
+    },
+    "final": {
+      "threw": true,
+      "message": "The operation is unavailable while collaboration is active.",
+      "code": "CAPABILITY_UNSUPPORTED"
+    }
+  },
+  "document.save({mode:\"final\"}) refused in collaboration": {
+    "threw": true,
+    "message": "V2 collaborative export does not support mode \"final\". Use mode \"review-preserving\" or a non-collaborative session.",
+    "code": "CAPABILITY_UNSUPPORTED"
+  },
+  "document.save({mode:\"review-preserving\"}) in collaboration": {
+    "elapsed_outcome": "settled",
+    "result": {
+      "contextId": "fixture-dpa-table-bearing-agreement-2e7f50",
+      "saved": true,
+      "inPlace": false,
+      "runtime": "v2",
+      "document": {
+        "path": "./SD-33/sd33-save-review-preserving.docx",
+        "source": "path",
+        "revision": 1
+      },
+      "context": {
+        "dirty": false,
+        "revision": 1,
+        "lastSavedAt": "2026-10-14T00:55:39.439Z"
+      },
+      "output": {
+        "path": "./SD-33/sd33-save-review-preserving.docx",
+        "byteLength": 283539,
+        "mode": "review-preserving",
+        "report": {
+          "warnings": []
+        }
+      },
+      "mode": "review-preserving",
+      "report": {
+        "warnings": []
+      }
+    },
+    "savedFileTagCounts": {
+      "w:ins": 0,
+      "w:del": 0
+    }
+  },
+  "document.save({mode:\"original\", out, force:true}) in collaboration": {
+    "threw": true,
+    "message": "V2 collaborative export does not support mode \"original\". Use mode \"review-preserving\" or a non-collaborative session.",
+    "code": "CAPABILITY_UNSUPPORTED"
+  },
+  "standalone (non-collaborative) final export, same fixture, for contrast": {
+    "byteLength": 45395,
+    "warnings": []
+  },
+  "verdict": {
+    "export.toDocx refused in collaboration": "REPRODUCES",
+    "documented collaborative save path (\"document.save\") hangs": "FIXED — resolves in well under a second, does not hang",
+    "no clean/final export possible from a live room": "FIXED (partially) — mode:\"final\" is still refused in-room with a clear, actionable error, but mode:\"review-preserving\" now succeeds in-room via document.save(); a clean export still requires leaving the room, which is a reasonable restriction, not a dead end"
+  }
+}

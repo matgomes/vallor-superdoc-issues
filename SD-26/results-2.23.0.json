@@ -1,0 +1,74 @@
+{
+  "superdocVersion": "2.23.0",
+  "sdkVersion": "2.20.0",
+  "verdict": "FIXED",
+  "before": "The Provider shall deliver the goods on time.Bravo paragraph will be deleted.Charlie headingDelta paragraph after the heading.",
+  "scopedReplace": {
+    "ok": true,
+    "result": {
+      "status": "ok",
+      "intent": "replace_text",
+      "preSnapshot": {
+        "revision": "1"
+      },
+      "postSnapshot": {
+        "revision": "2"
+      },
+      "selectedBlock": {
+        "nodeId": "00000001",
+        "nodeType": "paragraph"
+      },
+      "editsRequested": 1,
+      "editsApplied": [
+        {
+          "find": "Provider",
+          "occurrences": 1
+        }
+      ],
+      "replacedSpans": 1,
+      "postText": "The Vendor shall deliver the goods on time.",
+      "executedOperations": [
+        {
+          "operationId": "doc.mutations.apply",
+          "result": {
+            "success": true,
+            "revision": {
+              "before": "1",
+              "after": "2"
+            },
+            "stepCount": 1
+          }
+        }
+      ],
+      "verification": [
+        {
+          "check": {
+            "kind": "block-text-matches-expectation"
+          },
+          "passed": true
+        },
+        {
+          "check": {
+            "kind": "revision-changed"
+          },
+          "passed": true
+        }
+      ],
+      "changeMode": "tracked"
+    }
+  },
+  "legacyShape": {
+    "ok": false,
+    "code": "INVALID_ARGUMENT",
+    "message": "replace_text requires a non-empty \"edits\" array of {find, replace}"
+  },
+  "after": "The Vendor shall deliver the goods on time.Bravo paragraph will be deleted.Charlie headingDelta paragraph after the heading.",
+  "trackedChanges": [
+    {
+      "type": "replacement",
+      "subtype": "text-replacement",
+      "deletedText": "Provider",
+      "insertedText": "Vendor"
+    }
+  ]
+}

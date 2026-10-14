@@ -1,0 +1,39 @@
+{
+  "commentOnly": {
+    "clickedText": "Comment target text one.",
+    "card": {
+      "present": true,
+      "ariaLabel": "Comment by Reviewer",
+      "bodyText": "RReviewer9:00AM Oct 12First comment"
+    },
+    "snapshots": {
+      "commentsActiveId": "1",
+      "trackChangesActiveId": null
+    }
+  },
+  "trackedChangeOnly": {
+    "clickedText": "Tracked change target text two.",
+    "card": {
+      "present": true,
+      "ariaLabel": "Tracked change discussion",
+      "bodyText": "JDJane DoeIMPORTED9:00AM Oct 12Added \"Tracked change target text two.\""
+    },
+    "snapshots": {
+      "commentsActiveId": null,
+      "trackChangesActiveId": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1"
+    }
+  },
+  "nested": {
+    "clickedText": "Nested tracked change inside comment.",
+    "card": {
+      "present": true,
+      "ariaLabel": "Comment by Reviewer",
+      "bodyText": "RReviewer9:00AM Oct 12Nested comment"
+    },
+    "snapshots": {
+      "commentsActiveId": null,
+      "trackChangesActiveId": null
+    }
+  },
+  "errors": []
+}

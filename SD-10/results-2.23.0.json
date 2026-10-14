@@ -1,0 +1,50 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "FIXED",
+  "headless": {
+    "before": 0,
+    "after": 1,
+    "outcome": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "deleted": {
+          "kind": "block",
+          "nodeType": "paragraph",
+          "nodeId": "00000002"
+        },
+        "deletedBlock": {
+          "ordinal": 1,
+          "nodeId": "00000002",
+          "nodeType": "paragraph",
+          "textPreview": "This Agreement will govern the relationship for a period from the Start Date …"
+        },
+        "trackedChangeRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "210ea7831f6b3f476d402bee"
+          }
+        ],
+        "invalidatedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [],
+        "txId": "tx-ee353b9d-24f3-4e32-a61e-3320d7f7a828"
+      }
+    },
+    "tagCounts": {
+      "w:del": 2,
+      "w:ins": 0
+    }
+  },
+  "browserUi": {
+    "totalBefore": 0,
+    "totalAfter": 1,
+    "errorsAfterBackspace": []
+  }
+}

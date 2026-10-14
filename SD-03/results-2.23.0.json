@@ -1,0 +1,37 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "read": {
+    "trackedChangesBefore": 3,
+    "subtypes": [
+      "paragraph-mark-deletion",
+      "paragraph-mark-deletion",
+      "text-deletion"
+    ],
+    "decide": {
+      "ok": false,
+      "code": "INVALID_INPUT",
+      "message": "invalid-input"
+    }
+  },
+  "write": {
+    "subtypesAfterFirstMerge": [
+      "paragraph-mark-deletion"
+    ],
+    "subtypesAfterSecondMerge": [
+      "paragraph-mark-deletion",
+      "paragraph-mark-deletion"
+    ],
+    "totalAfterSecondMerge": 2,
+    "exportPath": "SD-03/exported-2.23.0.docx",
+    "tagCounts": {
+      "w:del": 2,
+      "w:ins": 0
+    },
+    "decide": {
+      "ok": false,
+      "code": "INVALID_INPUT",
+      "message": "invalid-input"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "doc": "SD-79/grouped-textboxes-po-overlay.docx",
+    "label": "po-overlay (real structure)",
+    "placeholders": 0,
+    "blackBoxes": 15,
+    "shapeALabelVisible": false,
+    "errors": [],
+    "screenshot": "screenshots/grouped-textboxes-po-overlay.png"
+  },
+  {
+    "doc": "SD-79/synthetic-alternatecontent-broken.docx",
+    "label": "synthetic broken (AlternateContent group + no-fill custGeom)",
+    "placeholders": 0,
+    "blackBoxes": 1,
+    "shapeALabelVisible": true,
+    "errors": [],
+    "screenshot": "screenshots/synthetic-alternatecontent-broken.png"
+  },
+  {
+    "doc": "SD-79/synthetic-alternatecontent-fixed.docx",
+    "label": "synthetic fixed (ungrouped + noFill)",
+    "placeholders": 0,
+    "blackBoxes": 0,
+    "shapeALabelVisible": true,
+    "errors": [],
+    "screenshot": "screenshots/synthetic-alternatecontent-fixed.png"
+  },
+  {
+    "doc": "SD-79/synthetic-alternatecontent-anchored-broken.docx",
+    "label": "synthetic broken, anchored/floating",
+    "placeholders": 0,
+    "blackBoxes": 1,
+    "shapeALabelVisible": false,
+    "errors": [],
+    "screenshot": "screenshots/synthetic-alternatecontent-anchored-broken.png"
+  }
+]

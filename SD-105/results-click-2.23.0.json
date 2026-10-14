@@ -1,0 +1,13 @@
+[
+  {
+    "doc": "SD-105/tracked-paste-schedule.docx",
+    "aliasesOnClickedElement": 273,
+    "firstPaintAfterClickMs": 313,
+    "maxFrameMs": 75,
+    "longTaskCount": 0,
+    "longTaskTotalMs": 0,
+    "heapBeforeMB": 124.52106094360352,
+    "heapAfterMB": 145.25474166870117,
+    "visibility": "visible"
+  }
+]

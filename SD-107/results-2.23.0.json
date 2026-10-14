@@ -1,0 +1,24 @@
+{
+  "firstId": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CProbe%7C2026-10-13T00%3A00%3A00Z%7C1%7CwId%3A1",
+  "getRectResult": {
+    "ok": true,
+    "result": {
+      "found": false,
+      "success": false,
+      "rects": [],
+      "reason": "invalid-target"
+    }
+  },
+  "scrollToResult": {
+    "ok": true,
+    "result": {
+      "success": true,
+      "ok": true
+    }
+  },
+  "scrollToElementResult": {
+    "ok": true,
+    "result": false
+  },
+  "errors": []
+}

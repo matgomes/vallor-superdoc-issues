@@ -1,0 +1,114 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "coordinateSpace": {
+    "deletedOnly": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "bookmark": {
+          "kind": "entity",
+          "entityType": "bookmark",
+          "name": "DeletedOnly"
+        }
+      }
+    },
+    "keptOnlyVisible": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "bookmark": {
+          "kind": "entity",
+          "entityType": "bookmark",
+          "name": "KeptVisible"
+        }
+      }
+    },
+    "fullClauseTracked": {
+      "ok": false,
+      "code": "COMMAND_FAILED",
+      "message": "Unable to place the bookmark end marker at offset 65 (invalid-range)."
+    },
+    "crossBoundaryTracked": {
+      "ok": false,
+      "code": "COMMAND_FAILED",
+      "message": "Unable to place the bookmark end marker at offset 40 (invalid-range)."
+    }
+  },
+  "rejectConsequence": {
+    "rangeBefore": {
+      "from": {
+        "blockId": "00000003",
+        "offset": 0
+      },
+      "to": {
+        "blockId": "00000003",
+        "offset": 35
+      }
+    },
+    "coveredTextBefore": "TEST TEST - MIRA Consulting Company",
+    "rejectResult": {
+      "ok": true,
+      "result": {
+        "success": true,
+        "inserted": [],
+        "removed": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "32645736b83f18d49d87813e"
+          }
+        ],
+        "invalidatedRefs": [
+          {
+            "kind": "entity",
+            "entityType": "trackedChange",
+            "entityId": "32645736b83f18d49d87813e"
+          }
+        ],
+        "remappedRefs": [],
+        "affectedStories": [
+          {
+            "kind": "story",
+            "storyType": "body"
+          }
+        ],
+        "textRangeShifts": [
+          {
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            },
+            "atChar": 35,
+            "blockId": "00000003",
+            "atCharInBlock": 0,
+            "delta": -5
+          },
+          {
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            },
+            "atChar": 30,
+            "blockId": "00000003",
+            "atCharInBlock": -5,
+            "delta": 30
+          }
+        ],
+        "txId": "tx-b39dc7c9-12be-4959-9c69-eb35ce0d95cb"
+      }
+    },
+    "rangeAfter": {
+      "from": {
+        "blockId": "00000003",
+        "offset": 30
+      },
+      "to": {
+        "blockId": "00000003",
+        "offset": 60
+      }
+    },
+    "coveredTextAfter": "TEST - MIRA Consulting Company",
+    "restoredPlaceholderExcluded": true
+  }
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "attemptNumber": 1,
+    "readyFired": true,
+    "uiListOutcome": {
+      "succeeded": true,
+      "value": [],
+      "error": null
+    },
+    "docListOutcome": {
+      "succeeded": true,
+      "value": {
+        "evaluatedRevision": "0",
+        "total": 1,
+        "items": [
+          {
+            "id": "1",
+            "handle": {
+              "ref": "comment:1",
+              "refStability": "stable",
+              "targetKind": "comment"
+            },
+            "address": {
+              "kind": "entity",
+              "entityType": "comment",
+              "entityId": "1"
+            },
+            "commentId": "1",
+            "text": "Comment seeded before the room opens",
+            "isInternal": false,
+            "status": "open",
+            "creatorName": "Reviewer",
+            "rawOoxmlId": "1",
+            "replyCount": 0,
+            "createdTime": 1791806400000,
+            "target": {
+              "kind": "text",
+              "coordinateSpace": "tracked",
+              "segments": [
+                {
+                  "blockId": "00000001",
+                  "range": {
+                    "start": 0,
+                    "end": 50
+                  }
+                }
+              ]
+            },
+            "anchoredText": "Commented paragraph in a fresh collaboration room."
+          }
+        ],
+        "page": {
+          "limit": 1,
+          "offset": 0,
+          "returned": 1
+        }
+      },
+      "error": null
+    },
+    "errors": []
+  },
+  {
+    "attemptNumber": 2,
+    "readyFired": true,
+    "uiListOutcome": {
+      "succeeded": true,
+      "value": [],
+      "error": null
+    },
+    "docListOutcome": {
+      "succeeded": true,
+      "value": {
+        "evaluatedRevision": "0",
+        "total": 1,
+        "items": [
+          {
+            "id": "1",
+            "handle": {
+              "ref": "comment:1",
+              "refStability": "stable",
+              "targetKind": "comment"
+            },
+            "address": {
+              "kind": "entity",
+              "entityType": "comment",
+              "entityId": "1"
+            },
+            "commentId": "1",
+            "text": "Comment seeded before the room opens",
+            "isInternal": false,
+            "status": "open",
+            "creatorName": "Reviewer",
+            "rawOoxmlId": "1",
+            "replyCount": 0,
+            "createdTime": 1791806400000,
+            "target": {
+              "kind": "text",
+              "coordinateSpace": "tracked",
+              "segments": [
+                {
+                  "blockId": "00000001",
+                  "range": {
+                    "start": 0,
+                    "end": 50
+                  }
+                }
+              ]
+            },
+            "anchoredText": "Commented paragraph in a fresh collaboration room."
+          }
+        ],
+        "page": {
+          "limit": 1,
+          "offset": 0,
+          "returned": 1
+        }
+      },
+      "error": null
+    },
+    "errors": []
+  },
+  {
+    "attemptNumber": 3,
+    "readyFired": true,
+    "uiListOutcome": {
+      "succeeded": true,
+      "value": [],
+      "error": null
+    },
+    "docListOutcome": {
+      "succeeded": true,
+      "value": {
+        "evaluatedRevision": "0",
+        "total": 1,
+        "items": [
+          {
+            "id": "1",
+            "handle": {
+              "ref": "comment:1",
+              "refStability": "stable",
+              "targetKind": "comment"
+            },
+            "address": {
+              "kind": "entity",
+              "entityType": "comment",
+              "entityId": "1"
+            },
+            "commentId": "1",
+            "text": "Comment seeded before the room opens",
+            "isInternal": false,
+            "status": "open",
+            "creatorName": "Reviewer",
+            "rawOoxmlId": "1",
+            "replyCount": 0,
+            "createdTime": 1791806400000,
+            "target": {
+              "kind": "text",
+              "coordinateSpace": "tracked",
+              "segments": [
+                {
+                  "blockId": "00000001",
+                  "range": {
+                    "start": 0,
+                    "end": 50
+                  }
+                }
+              ]
+            },
+            "anchoredText": "Commented paragraph in a fresh collaboration room."
+          }
+        ],
+        "page": {
+          "limit": 1,
+          "offset": 0,
+          "returned": 1
+        }
+      },
+      "error": null
+    },
+    "errors": []
+  }
+]

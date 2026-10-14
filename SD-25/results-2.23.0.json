@@ -1,0 +1,116 @@
+{
+  "superdocVersion": "2.23.0",
+  "verdict": "REPRODUCES",
+  "includeDeletedText": {
+    "simpleFindDefault": {
+      "ok": true,
+      "result": {
+        "total": 0,
+        "limit": 100,
+        "offset": 0,
+        "items": []
+      }
+    },
+    "simpleFindIncluded": {
+      "ok": true,
+      "result": {
+        "total": 0,
+        "limit": 100,
+        "offset": 0,
+        "items": []
+      }
+    },
+    "replacementFindIncluded": {
+      "ok": true,
+      "result": {
+        "total": 0,
+        "limit": 100,
+        "offset": 0,
+        "items": []
+      }
+    }
+  },
+  "ambiguousMatch": {
+    "text": "Widget A costs 150 dollars.Bravo paragraph will be deleted.Charlie headingWidget A costs 150 dollars.",
+    "trackedChangeCount": 1,
+    "findBoth": {
+      "ok": true,
+      "result": {
+        "total": 2,
+        "limit": 100,
+        "offset": 0,
+        "items": [
+          {
+            "address": {
+              "kind": "block",
+              "nodeType": "paragraph",
+              "nodeId": "00000001"
+            },
+            "node": {
+              "id": "00000001",
+              "kind": "paragraph",
+              "paragraphIds": {
+                "paraId": "00000001"
+              },
+              "paragraph": {
+                "inlines": [
+                  {
+                    "kind": "run",
+                    "run": {
+                      "text": "Widget A costs 150 dollars."
+                    }
+                  }
+                ]
+              }
+            },
+            "context": {
+              "ancestors": [
+                {
+                  "id": "v2-text:eyJ2IjoxLCJyZXYiOiJzZC00aDM0M24tMTN0aS0xLXJoa2o6cGtnOjEiLCJzdG9yeUlkIjoibWFpbjovd29yZC9kb2N1bWVudC54bWwiLCJzdG9yeUtpbmQiOiJtYWluIiwicGFydFVyaSI6Ii93b3JkL2RvY3VtZW50LnhtbCIsInBhcnRSZXYiOiJzZC00aDM0M24tMTN0aS0xLXJoa2o6cGFydDo1Iiwic3RvcnlSZXYiOiJzZC00aDM0M24tMTN0aS0xLXJoa2o6c3Rvcnk6MSIsImJsb2NrSWQiOiIwMDAwMDAwMSIsInN0YXJ0IjowLCJlbmQiOjI3LCJtYXRjaFRleHQiOiJXaWRnZXQgQSBjb3N0cyAxNTAgZG9sbGFycy4ifQ==",
+                  "kind": "v2-search-ref"
+                }
+              ]
+            }
+          },
+          {
+            "address": {
+              "kind": "block",
+              "nodeType": "paragraph",
+              "nodeId": "00000004"
+            },
+            "node": {
+              "id": "00000004",
+              "kind": "paragraph",
+              "paragraphIds": {
+                "paraId": "00000004"
+              },
+              "paragraph": {
+                "inlines": [
+                  {
+                    "kind": "run",
+                    "run": {
+                      "text": "Widget A costs 150 dollars."
+                    }
+                  }
+                ]
+              }
+            },
+            "context": {
+              "ancestors": [
+                {
+                  "id": "v2-text:eyJ2IjoxLCJyZXYiOiJzZC00aDM0M24tMTN0aS0xLXJoa2o6cGtnOjEiLCJzdG9yeUlkIjoibWFpbjovd29yZC9kb2N1bWVudC54bWwiLCJzdG9yeUtpbmQiOiJtYWluIiwicGFydFVyaSI6Ii93b3JkL2RvY3VtZW50LnhtbCIsInBhcnRSZXYiOiJzZC00aDM0M24tMTN0aS0xLXJoa2o6cGFydDo1Iiwic3RvcnlSZXYiOiJzZC00aDM0M24tMTN0aS0xLXJoa2o6c3Rvcnk6MSIsImJsb2NrSWQiOiIwMDAwMDAwNCIsInN0YXJ0IjowLCJlbmQiOjI3LCJtYXRjaFRleHQiOiJXaWRnZXQgQSBjb3N0cyAxNTAgZG9sbGFycy4ifQ==",
+                  "kind": "v2-search-ref"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "planRequireExactlyOne": {
+      "ok": false,
+      "code": "COMMAND_FAILED",
+      "message": "selector matched 2 ranges, expected exactly one."
+    }
+  }
+}

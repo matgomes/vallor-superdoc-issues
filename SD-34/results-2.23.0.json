@@ -1,0 +1,981 @@
+{
+  "superdocTarget": "2.23.0",
+  "sdkTarget": "@superdoc/sdk 2.20.0",
+  "timestamp": "2026-10-14T01:03:57.363Z",
+  "cases": [
+    {
+      "case": "A-oneshot-cross-cell",
+      "mode": "standalone",
+      "result": {
+        "attempted": "one-shot cross-cell delete",
+        "ok": true,
+        "result": {
+          "document": {
+            "path": "./SD-34/fixture-table-bearing-agreement.docx",
+            "source": "path",
+            "byteLength": 45950,
+            "revision": 1
+          },
+          "target": {
+            "kind": "text",
+            "blockId": "02000001",
+            "range": {
+              "start": 0,
+              "end": 7
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "resolvedRange": {
+            "from": 69418,
+            "to": 69864
+          },
+          "receipt": {
+            "success": true,
+            "txId": "tx-4a7d30c7-dd57-4c10-b52e-e2d795ed54cb",
+            "resolution": {
+              "target": {
+                "kind": "text",
+                "blockId": "02000001",
+                "range": {
+                  "start": 0,
+                  "end": 7
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "range": {
+                "from": 69418,
+                "to": 69864
+              },
+              "text": "CORRAN:\nC",
+              "selectionTarget": {
+                "kind": "selection",
+                "start": {
+                  "kind": "text",
+                  "blockId": "02000001",
+                  "offset": 0
+                },
+                "end": {
+                  "kind": "text",
+                  "blockId": "02000002",
+                  "offset": 1
+                }
+              }
+            },
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [
+              {
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                },
+                "atChar": 24532,
+                "blockId": "02000001",
+                "atCharInBlock": 0,
+                "delta": -7
+              },
+              {
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                },
+                "atChar": 24539,
+                "blockId": "02000002",
+                "atCharInBlock": 0,
+                "delta": -1
+              }
+            ],
+            "inserted": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "a25f6b448ac9322226c38f2a"
+              }
+            ],
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "a25f6b448ac9322226c38f2a"
+              }
+            ],
+            "trackedChangeCount": 1,
+            "trackedChangeOutcomes": [
+              {
+                "editIndex": 0,
+                "trackedChangeCount": 1,
+                "trackedChangeRefs": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "a25f6b448ac9322226c38f2a"
+                  }
+                ]
+              },
+              {
+                "editIndex": 1,
+                "trackedChangeCount": 1,
+                "trackedChangeRefs": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "a25f6b448ac9322226c38f2a"
+                  }
+                ]
+              }
+            ]
+          },
+          "changeMode": "tracked",
+          "dryRun": false,
+          "context": {
+            "dirty": true,
+            "revision": 1
+          }
+        }
+      }
+    },
+    {
+      "case": "A-oneshot-cross-cell",
+      "mode": "room",
+      "result": {
+        "attempted": "one-shot cross-cell delete",
+        "ok": true,
+        "result": {
+          "document": {
+            "path": "./SD-34/fixture-table-bearing-agreement.docx",
+            "source": "path",
+            "byteLength": 45950,
+            "revision": 2
+          },
+          "target": {
+            "kind": "text",
+            "blockId": "02000001",
+            "range": {
+              "start": 0,
+              "end": 7
+            },
+            "story": {
+              "kind": "story",
+              "storyType": "body"
+            }
+          },
+          "resolvedRange": {
+            "from": 65992,
+            "to": 66342
+          },
+          "receipt": {
+            "success": true,
+            "txId": "tx-a8dff4aa-8df1-4b24-b5dd-e9810756be0e",
+            "resolution": {
+              "target": {
+                "kind": "text",
+                "blockId": "02000001",
+                "range": {
+                  "start": 0,
+                  "end": 7
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "range": {
+                "from": 65992,
+                "to": 66342
+              },
+              "text": "CORRAN:\nC",
+              "selectionTarget": {
+                "kind": "selection",
+                "start": {
+                  "kind": "text",
+                  "blockId": "02000001",
+                  "offset": 0
+                },
+                "end": {
+                  "kind": "text",
+                  "blockId": "02000002",
+                  "offset": 1
+                }
+              }
+            },
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [
+              {
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                },
+                "atChar": 24532,
+                "blockId": "02000001",
+                "atCharInBlock": 0,
+                "delta": -7
+              },
+              {
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                },
+                "atChar": 24539,
+                "blockId": "02000002",
+                "atCharInBlock": 0,
+                "delta": -1
+              }
+            ],
+            "inserted": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "c709fdab098944365bd6093f"
+              }
+            ],
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "c709fdab098944365bd6093f"
+              }
+            ],
+            "trackedChangeCount": 1,
+            "trackedChangeOutcomes": [
+              {
+                "editIndex": 0,
+                "trackedChangeCount": 1,
+                "trackedChangeRefs": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "c709fdab098944365bd6093f"
+                  }
+                ]
+              },
+              {
+                "editIndex": 1,
+                "trackedChangeCount": 1,
+                "trackedChangeRefs": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "c709fdab098944365bd6093f"
+                  }
+                ]
+              }
+            ]
+          },
+          "changeMode": "tracked",
+          "dryRun": false,
+          "context": {
+            "dirty": true,
+            "revision": 2
+          }
+        }
+      }
+    },
+    {
+      "case": "B-sequential-percell",
+      "mode": "standalone",
+      "result": {
+        "attempted": "sequential per-cell tracked delete, then save",
+        "perCell": [
+          {
+            "cell": "cellA",
+            "ok": true,
+            "result": {
+              "document": {
+                "path": "./SD-34/fixture-table-bearing-agreement.docx",
+                "source": "path",
+                "byteLength": 45950,
+                "revision": 1
+              },
+              "target": {
+                "kind": "text",
+                "blockId": "02000001",
+                "range": {
+                  "start": 0,
+                  "end": 1
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "resolvedRange": {
+                "from": 69418,
+                "to": 69585
+              },
+              "receipt": {
+                "success": true,
+                "affectedStories": [
+                  {
+                    "kind": "story",
+                    "storyType": "body"
+                  }
+                ],
+                "textRangeShifts": [
+                  {
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    },
+                    "atChar": 24532,
+                    "blockId": "02000001",
+                    "atCharInBlock": 0,
+                    "delta": -1
+                  }
+                ],
+                "txId": "tx-58f95144-6597-4a11-ab1a-4a07f135ac4b",
+                "resolution": {
+                  "target": {
+                    "kind": "text",
+                    "blockId": "02000001",
+                    "range": {
+                      "start": 0,
+                      "end": 1
+                    },
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    }
+                  },
+                  "range": {
+                    "from": 69418,
+                    "to": 69585
+                  },
+                  "text": "C",
+                  "selectionTarget": {
+                    "kind": "selection",
+                    "start": {
+                      "kind": "text",
+                      "blockId": "02000001",
+                      "offset": 0
+                    },
+                    "end": {
+                      "kind": "text",
+                      "blockId": "02000001",
+                      "offset": 1
+                    }
+                  }
+                },
+                "inserted": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "544d95f36dba91d2ef28154a"
+                  }
+                ]
+              },
+              "changeMode": "tracked",
+              "dryRun": false,
+              "context": {
+                "dirty": true,
+                "revision": 1
+              }
+            }
+          },
+          {
+            "cell": "cellB",
+            "ok": true,
+            "result": {
+              "document": {
+                "path": "./SD-34/fixture-table-bearing-agreement.docx",
+                "source": "path",
+                "byteLength": 45950,
+                "revision": 2
+              },
+              "target": {
+                "kind": "text",
+                "blockId": "02000002",
+                "range": {
+                  "start": 0,
+                  "end": 1
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "resolvedRange": {
+                "from": 69873,
+                "to": 70040
+              },
+              "receipt": {
+                "success": true,
+                "affectedStories": [
+                  {
+                    "kind": "story",
+                    "storyType": "body"
+                  }
+                ],
+                "textRangeShifts": [
+                  {
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    },
+                    "atChar": 24538,
+                    "blockId": "02000002",
+                    "atCharInBlock": 0,
+                    "delta": -1
+                  }
+                ],
+                "txId": "tx-05cbba4f-910f-47f3-a95a-e61be6db4fb9",
+                "resolution": {
+                  "target": {
+                    "kind": "text",
+                    "blockId": "02000002",
+                    "range": {
+                      "start": 0,
+                      "end": 1
+                    },
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    }
+                  },
+                  "range": {
+                    "from": 69873,
+                    "to": 70040
+                  },
+                  "text": "C",
+                  "selectionTarget": {
+                    "kind": "selection",
+                    "start": {
+                      "kind": "text",
+                      "blockId": "02000002",
+                      "offset": 0
+                    },
+                    "end": {
+                      "kind": "text",
+                      "blockId": "02000002",
+                      "offset": 1
+                    }
+                  }
+                },
+                "inserted": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "b43e1bd39f879df4e07400a3"
+                  }
+                ]
+              },
+              "changeMode": "tracked",
+              "dryRun": false,
+              "context": {
+                "dirty": true,
+                "revision": 2
+              }
+            }
+          }
+        ],
+        "save": {
+          "exportToDocx": {
+            "ok": true,
+            "byteLength": 45532,
+            "warnings": []
+          },
+          "documentSave": {
+            "ok": true,
+            "byteLength": 45532,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "case": "B-sequential-percell",
+      "mode": "room",
+      "result": {
+        "attempted": "sequential per-cell tracked delete, then save",
+        "perCell": [
+          {
+            "cell": "cellA",
+            "ok": true,
+            "result": {
+              "document": {
+                "path": "./SD-34/fixture-table-bearing-agreement.docx",
+                "source": "path",
+                "byteLength": 45950,
+                "revision": 2
+              },
+              "target": {
+                "kind": "text",
+                "blockId": "02000001",
+                "range": {
+                  "start": 0,
+                  "end": 1
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "resolvedRange": {
+                "from": 65992,
+                "to": 66111
+              },
+              "receipt": {
+                "success": true,
+                "affectedStories": [
+                  {
+                    "kind": "story",
+                    "storyType": "body"
+                  }
+                ],
+                "textRangeShifts": [
+                  {
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    },
+                    "atChar": 24532,
+                    "blockId": "02000001",
+                    "atCharInBlock": 0,
+                    "delta": -1
+                  }
+                ],
+                "txId": "tx-e39c1434-eccd-47f8-b6e2-37e6d5bfd1b4",
+                "resolution": {
+                  "target": {
+                    "kind": "text",
+                    "blockId": "02000001",
+                    "range": {
+                      "start": 0,
+                      "end": 1
+                    },
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    }
+                  },
+                  "range": {
+                    "from": 65992,
+                    "to": 66111
+                  },
+                  "text": "C",
+                  "selectionTarget": {
+                    "kind": "selection",
+                    "start": {
+                      "kind": "text",
+                      "blockId": "02000001",
+                      "offset": 0
+                    },
+                    "end": {
+                      "kind": "text",
+                      "blockId": "02000001",
+                      "offset": 1
+                    }
+                  }
+                },
+                "inserted": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "005c4b1d85baa224023d2dbe"
+                  }
+                ]
+              },
+              "changeMode": "tracked",
+              "dryRun": false,
+              "context": {
+                "dirty": true,
+                "revision": 2
+              }
+            }
+          },
+          {
+            "cell": "cellB",
+            "ok": true,
+            "result": {
+              "document": {
+                "path": "./SD-34/fixture-table-bearing-agreement.docx",
+                "source": "path",
+                "byteLength": 45950,
+                "revision": 3
+              },
+              "target": {
+                "kind": "text",
+                "blockId": "02000002",
+                "range": {
+                  "start": 0,
+                  "end": 1
+                },
+                "story": {
+                  "kind": "story",
+                  "storyType": "body"
+                }
+              },
+              "resolvedRange": {
+                "from": 66399,
+                "to": 66518
+              },
+              "receipt": {
+                "success": true,
+                "affectedStories": [
+                  {
+                    "kind": "story",
+                    "storyType": "body"
+                  }
+                ],
+                "textRangeShifts": [
+                  {
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    },
+                    "atChar": 24538,
+                    "blockId": "02000002",
+                    "atCharInBlock": 0,
+                    "delta": -1
+                  }
+                ],
+                "txId": "tx-6be2d9ad-f956-48f6-a056-3fa7f5f1ecf1",
+                "resolution": {
+                  "target": {
+                    "kind": "text",
+                    "blockId": "02000002",
+                    "range": {
+                      "start": 0,
+                      "end": 1
+                    },
+                    "story": {
+                      "kind": "story",
+                      "storyType": "body"
+                    }
+                  },
+                  "range": {
+                    "from": 66399,
+                    "to": 66518
+                  },
+                  "text": "C",
+                  "selectionTarget": {
+                    "kind": "selection",
+                    "start": {
+                      "kind": "text",
+                      "blockId": "02000002",
+                      "offset": 0
+                    },
+                    "end": {
+                      "kind": "text",
+                      "blockId": "02000002",
+                      "offset": 1
+                    }
+                  }
+                },
+                "inserted": [
+                  {
+                    "kind": "entity",
+                    "entityType": "trackedChange",
+                    "entityId": "69d3c893293fa39a5678878c"
+                  }
+                ]
+              },
+              "changeMode": "tracked",
+              "dryRun": false,
+              "context": {
+                "dirty": true,
+                "revision": 3
+              }
+            }
+          }
+        ],
+        "save": {
+          "exportToDocx": {
+            "ok": false,
+            "error": {
+              "message": "The operation is unavailable while collaboration is active.",
+              "name": "SuperDocCliError",
+              "code": "CAPABILITY_UNSUPPORTED",
+              "raw": {
+                "stack": "SuperDocCliError: The operation is unavailable while collaboration is active.\n    at HostTransport.mapJsonRpcError (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:753:58)\n    at HostTransport.onStdoutLine (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:722:33)\n    at HostTransport.onStdoutChunk (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:735:18)\n    at Socket.stdoutDataListener (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:474:52)\n    at Socket.emit (node:events:507:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)\n    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)",
+                "message": "The operation is unavailable while collaboration is active.",
+                "code": "CAPABILITY_UNSUPPORTED",
+                "details": {
+                  "details": {}
+                },
+                "exitCode": 1,
+                "name": "SuperDocCliError"
+              }
+            }
+          },
+          "documentSave": {
+            "ok": true,
+            "byteLength": 283943,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "case": "C-undo-redo",
+      "mode": "standalone",
+      "result": {
+        "attempted": "edit table cell, undo, redo, then save",
+        "edit": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "deleted": {
+              "kind": "block",
+              "nodeType": "paragraph",
+              "nodeId": "02000001"
+            },
+            "deletedBlock": {
+              "ordinal": 93,
+              "nodeId": "02000001",
+              "nodeType": "paragraph",
+              "textPreview": "CORRAN:"
+            },
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "5d3aa27bae70d66f80d9cbf2"
+              }
+            ],
+            "invalidatedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-e46182c4-ff8d-43a9-a5de-418591b39166"
+          }
+        },
+        "undo": {
+          "ok": true,
+          "result": {
+            "noop": false,
+            "revision": {
+              "before": "sd-5710mr-k5y-1-9m6yt:pkg:2",
+              "after": "sd-5710mr-k5y-1-9m6yt:pkg:3"
+            },
+            "inserted": [],
+            "updated": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|2EF4A86F%7CwId%3A112"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|2EF4A86F%7CwId%3A112"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": []
+          }
+        },
+        "redo": {
+          "ok": true,
+          "result": {
+            "noop": false,
+            "revision": {
+              "before": "sd-5710mr-k5y-1-9m6yt:pkg:3",
+              "after": "sd-5710mr-k5y-1-9m6yt:pkg:4"
+            },
+            "inserted": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "5d3aa27bae70d66f80d9cbf2"
+              }
+            ],
+            "updated": [],
+            "removed": [],
+            "invalidatedRefs": [],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": []
+          }
+        },
+        "save": {
+          "exportToDocx": {
+            "ok": true,
+            "byteLength": 45507,
+            "warnings": []
+          },
+          "documentSave": {
+            "ok": true,
+            "byteLength": 45507,
+            "warnings": []
+          }
+        }
+      }
+    },
+    {
+      "case": "C-undo-redo",
+      "mode": "room",
+      "result": {
+        "attempted": "edit table cell, undo, redo, then save",
+        "edit": {
+          "ok": true,
+          "result": {
+            "success": true,
+            "deleted": {
+              "kind": "block",
+              "nodeType": "paragraph",
+              "nodeId": "02000001"
+            },
+            "deletedBlock": {
+              "ordinal": 93,
+              "nodeId": "02000001",
+              "nodeType": "paragraph",
+              "textPreview": "CORRAN:"
+            },
+            "trackedChangeRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "ba7d5ee0a268a51b1793f45e"
+              }
+            ],
+            "invalidatedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "txId": "tx-670720b7-8b80-4501-94fc-b4ccf7b95569"
+          }
+        },
+        "undo": {
+          "ok": true,
+          "result": {
+            "noop": false,
+            "revision": {
+              "before": "sd-72u6g4-k6c-1-103ga:pkg:3",
+              "after": "sd-72u6g4-k6c-1-103ga:pkg:4"
+            },
+            "inserted": [],
+            "updated": [],
+            "removed": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|43885649%7CwId%3A112"
+              }
+            ],
+            "invalidatedRefs": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "tc|main%3A%2Fword%2Fdocument.xml|del|43885649%7CwId%3A112"
+              }
+            ],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "status": "applied",
+            "collaboration": {
+              "mode": "single-shard",
+              "opId": "tx-670720b7-8b80-4501-94fc-b4ccf7b95569",
+              "affectedShards": [
+                "main:/word/document.xml"
+              ]
+            }
+          }
+        },
+        "redo": {
+          "ok": true,
+          "result": {
+            "noop": false,
+            "revision": {
+              "before": "sd-72u6g4-k6c-1-103ga:pkg:4",
+              "after": "sd-72u6g4-k6c-1-103ga:pkg:5"
+            },
+            "inserted": [
+              {
+                "kind": "entity",
+                "entityType": "trackedChange",
+                "entityId": "ba7d5ee0a268a51b1793f45e"
+              }
+            ],
+            "updated": [],
+            "removed": [],
+            "invalidatedRefs": [],
+            "remappedRefs": [],
+            "affectedStories": [
+              {
+                "kind": "story",
+                "storyType": "body"
+              }
+            ],
+            "textRangeShifts": [],
+            "status": "applied",
+            "collaboration": {
+              "mode": "single-shard",
+              "opId": "tx-670720b7-8b80-4501-94fc-b4ccf7b95569",
+              "affectedShards": [
+                "main:/word/document.xml"
+              ]
+            }
+          }
+        },
+        "save": {
+          "exportToDocx": {
+            "ok": false,
+            "error": {
+              "message": "The operation is unavailable while collaboration is active.",
+              "name": "SuperDocCliError",
+              "code": "CAPABILITY_UNSUPPORTED",
+              "raw": {
+                "stack": "SuperDocCliError: The operation is unavailable while collaboration is active.\n    at HostTransport.mapJsonRpcError (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:753:58)\n    at HostTransport.onStdoutLine (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:722:33)\n    at HostTransport.onStdoutChunk (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:735:18)\n    at Socket.stdoutDataListener (file://./node_modules/@superdoc/sdk/dist/runtime/host.js:474:52)\n    at Socket.emit (node:events:507:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)\n    at Readable.push (node:internal/streams/readable:390:5)\n    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)",
+                "message": "The operation is unavailable while collaboration is active.",
+                "code": "CAPABILITY_UNSUPPORTED",
+                "details": {
+                  "details": {}
+                },
+                "exitCode": 1,
+                "name": "SuperDocCliError"
+              }
+            }
+          },
+          "documentSave": {
+            "ok": true,
+            "byteLength": 283698,
+            "warnings": []
+          }
+        }
+      }
+    }
+  ]
+}

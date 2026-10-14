@@ -1,0 +1,61 @@
+{
+  "version": "2.23.0",
+  "largeFixture": "_fixtures/msa-200-pages-template.docx",
+  "trackedFixture": "_fixtures/dpa-multi-redline.docx",
+  "virtualization": {
+    "totalBlocks": 2159,
+    "nearTopRect": {
+      "found": true,
+      "success": true,
+      "rects": [
+        {
+          "pageIndex": 0,
+          "left": 191.71875,
+          "right": 250.96875,
+          "top": 159.328125,
+          "bottom": 189.328125,
+          "width": 59.25,
+          "height": 30
+        }
+      ],
+      "rect": {
+        "pageIndex": 0,
+        "left": 191.71875,
+        "right": 250.96875,
+        "top": 159.328125,
+        "bottom": 189.328125,
+        "width": 59.25,
+        "height": 30
+      }
+    },
+    "nearEndRect": {
+      "found": false,
+      "success": false,
+      "rects": [],
+      "reason": "unresolved"
+    }
+  },
+  "entityVsScroll": {
+    "totalChanges": 37,
+    "getRectByEntityAddress": {
+      "found": false,
+      "success": false,
+      "rects": [],
+      "reason": "invalid-target"
+    },
+    "scrollIntoViewByEntityAddress": {
+      "success": true
+    },
+    "trackChangesScrollToById": {
+      "success": true,
+      "ok": true
+    },
+    "bookmarksHandleKeys": [
+      "navigateTo"
+    ]
+  },
+  "decoration": {
+    "tried": true,
+    "survivedAfter500ms": true
+  }
+}

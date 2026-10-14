@@ -1,0 +1,21 @@
+{
+  "version": "2.23.0",
+  "fixture": "_fixtures/dpa-multi-redline.docx",
+  "acceptAllSync": {
+    "before": 37,
+    "result": true,
+    "after": 0
+  },
+  "acceptAllAsync": {
+    "before": 37,
+    "resultSuccess": true,
+    "removedCount": 37,
+    "after": 0
+  },
+  "rejectAllAsync": {
+    "before": 37,
+    "resultSuccess": true,
+    "removedCount": 37,
+    "after": 0
+  }
+}

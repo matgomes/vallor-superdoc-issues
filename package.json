@@ -1,0 +1,20 @@
+{
+  "name": "vallor-superdoc-issues",
+  "private": true,
+  "type": "module",
+  "description": "Bare-SuperDoc repro harness for bug reports filed with the SuperDoc vendor. No Vallor application code.",
+  "scripts": {
+    "setup": "npm i && npx playwright install chromium"
+  },
+  "dependencies": {
+    "@hocuspocus/server": "2.15.3",
+    "@superdoc/sdk": "2.20.0",
+    "jszip": "3.10.2",
+    "superdoc": "2.23.0",
+    "yjs": "13.6.33"
+  },
+  "devDependencies": {
+    "playwright": "1.64.0",
+    "vite": "8.3.4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "2.23.0",
+  "fixture": "_fixtures/bookmark-x1-plain.docx",
+  "browser": {
+    "outcome": "threw",
+    "constructorName": "pxn",
+    "name": "WorkerTransportError",
+    "topLevelCode": "execution-error",
+    "nestedReason": "TARGET_NOT_FOUND",
+    "message": "bookmarks.get: bookmark \"definitely-does-not-exist\" was not found."
+  },
+  "headlessSdk": {
+    "outcome": "threw",
+    "constructorName": "SuperDocCliError",
+    "name": "SuperDocCliError",
+    "topLevelCode": "TARGET_NOT_FOUND",
+    "message": "bookmarks.get: bookmark \"definitely-does-not-exist\" was not found."
+  }
+}

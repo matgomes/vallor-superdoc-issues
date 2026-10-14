@@ -1,0 +1,83 @@
+{
+  "issue": "SD-32",
+  "version": {
+    "superdoc": "2.23.0",
+    "sdk": "@superdoc/sdk 2.20.0"
+  },
+  "verdict": "REPRODUCES",
+  "sdk": {
+    "beforeCounts": {
+      "w:ins": 2,
+      "w:del": 2,
+      "w:cellIns": 1,
+      "w:cellDel": 1,
+      "w:cellMerge": 2,
+      "w:trPrChange": 1,
+      "w:tblPrChange": 1,
+      "w:tcPrChange": 1,
+      "w:pPrChange": 1,
+      "w:rPrChange": 1
+    },
+    "afterCounts": {
+      "w:ins": 0,
+      "w:del": 0,
+      "w:cellIns": 1,
+      "w:cellDel": 1,
+      "w:cellMerge": 2,
+      "w:trPrChange": 1,
+      "w:tblPrChange": 1,
+      "w:tcPrChange": 1,
+      "w:pPrChange": 1,
+      "w:rPrChange": 1
+    },
+    "warnings": [
+      {
+        "code": "replacement-decomposed",
+        "message": "Tracked replacement is exported as Word-compatible delete and insert markup.",
+        "feature": "trackedChanges",
+        "severity": "warning",
+        "affectedObjectId": "tc|main%3A%2Fword%2Fdocument.xml|replacement|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cdel%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C115%7CwId%3A115|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-05T12%3A00%3A00Z%7C116%7CwId%3A116",
+        "affectedPartUri": "/word/document.xml",
+        "canProceed": true
+      }
+    ],
+    "survivors": [
+      "w:cellIns",
+      "w:cellDel",
+      "w:cellMerge",
+      "w:trPrChange",
+      "w:tblPrChange",
+      "w:tcPrChange",
+      "w:pPrChange",
+      "w:rPrChange"
+    ],
+    "warningsMentionSurvivors": false
+  },
+  "browser": {
+    "baselineCounts": {
+      "w:ins": 2,
+      "w:del": 2,
+      "w:cellIns": 1,
+      "w:cellDel": 1,
+      "w:cellMerge": 2,
+      "w:trPrChange": 1,
+      "w:tblPrChange": 1,
+      "w:tcPrChange": 1,
+      "w:pPrChange": 1,
+      "w:rPrChange": 1
+    },
+    "finalCounts": {
+      "w:ins": 2,
+      "w:del": 2,
+      "w:cellIns": 1,
+      "w:cellDel": 1,
+      "w:cellMerge": 2,
+      "w:trPrChange": 1,
+      "w:tblPrChange": 1,
+      "w:tcPrChange": 1,
+      "w:pPrChange": 1,
+      "w:rPrChange": 1
+    },
+    "byteIdentical": true
+  }
+}

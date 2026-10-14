@@ -1,0 +1,27 @@
+{
+  "packageVersionTested": "1.0.2",
+  "claim1_readmeExampleCrashes": {
+    "reproduces": true,
+    "defaultImportError": "module has no default export (named exports only)",
+    "namedImportError": "TypeError: Cannot read properties of undefined (reading 'hooks')"
+  },
+  "claim1_correctApiWorks": true,
+  "claim2_expressStyleParams": {
+    "reproduces": true,
+    "rawHttpRequestHasParams": false
+  },
+  "claim3_unhandledRejection": {
+    "reproduces": true,
+    "reason": "Collaboration request missing required \"documentId\" param"
+  },
+  "claim4_onChangeFiresManyTimes": {
+    "reproduces": false,
+    "onChangeCountForOneTransaction": 1,
+    "note": "Tested with a raw yjs client doing one Y.Transaction, not a real SuperDoc/y-prosemirror editing session -- see README caveat."
+  },
+  "claim5_bundlesOwnYjs": {
+    "reproduces": true,
+    "instanceofHostYDoc": false,
+    "sawDuplicateYjsWarning": false
+  }
+}

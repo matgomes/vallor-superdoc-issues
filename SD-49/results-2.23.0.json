@@ -1,0 +1,43 @@
+{
+  "setActiveFindings": {
+    "tcSetActiveResult": true,
+    "cardAfterTcSetActive": false,
+    "tcActiveIdAfterSetActive": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1",
+    "commentSetActiveResult": true,
+    "cardAfterCommentSetActive": false,
+    "commentActiveIdAfterSetActive": "1",
+    "errors": []
+  },
+  "paintedWindowFindings": {
+    "atTopCount": 1,
+    "atTopIds": [
+      "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1"
+    ],
+    "atBottomCount": 1,
+    "atBottomIds": [
+      "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C2%7CwId%3A2"
+    ],
+    "errors": []
+  },
+  "navigateNextFindings": {
+    "onlyVisibleId": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1",
+    "activeIdBeforeNavigate": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1",
+    "navigateOutcome": {
+      "settledWithin4s": true,
+      "value": {
+        "success": true
+      }
+    },
+    "activeIdAfterNavigate": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1",
+    "navigateActuallyMovedActiveId": false,
+    "cardAfterNavigate": false,
+    "errors": []
+  },
+  "integratorButtonFindings": {
+    "integratorResult": {
+      "success": true
+    },
+    "activeIdAfterClick": "tc|main%3A%2Fword%2Fdocument.xml|ins|sd%3Amain%3A%2Fword%2Fdocument.xml%7Cins%7CJane%20Doe%7C2026-10-12T12%3A00%3A00Z%7C1%7CwId%3A1",
+    "cardAfterClick": false
+  }
+}
