@@ -1,4 +1,4 @@
-# SD-01 — In a collaboration room, `trackChanges.decide` fails with INVALID_CONTEXT for any tracked change after a footnote reference
+# SD-01 — In a collaboration room, `trackChanges.decide` fails with INVALID_CONTEXT for tracked changes after a footnote/endnote reference, smartTag or customXml
 
 Reported upstream: [superdoc/docx-editor#4082](https://github.com/superdoc/docx-editor/issues/4082).
 
@@ -7,7 +7,7 @@ Reported upstream: [superdoc/docx-editor#4082](https://github.com/superdoc/docx-
 In a v2 collaboration room, accepting or rejecting a tracked change throws
 `INVALID_CONTEXT` (`unsupported-context`) when the change sits **after a footnote reference in
 the same paragraph**. Changes before the footnote reference in the same paragraph work, and the
-same calls succeed when the document is opened without a room. Nothing is changed when it fails.
+same calls succeed when the document is opened without a room. Nothing is changed when it fails. Endnote references and `smartTag` / `customXml` wrappers before the change trigger it too (see [Other triggers](#other-triggers-same-failure)).
 
 This is the trigger the original report was missing. Production saw `decide` fail in rooms on
 payloads that worked outside them; a broad matrix without footnotes (below) never reproduced it.
@@ -22,7 +22,8 @@ footnote reference before it. The visible text counts the footnote reference as 
 
 - **`@superdoc/sdk` 2.20.0 (this repo's pin, with superdoc 2.23.0): REPRODUCES**, see
   [`footnote/results-sdk-2.20.0.txt`](footnote/results-sdk-2.20.0.txt).
-- Also reproduced on `@superdoc/sdk` 2.21.0 and 2.22.0-next.11.
+- **Latest releases, 2026-10-19: `@superdoc/sdk` 2.21.0 (`latest`) and 2.22.0-next.11 (`next`): all four
+  triggers below REPRODUCE**, see [`other-triggers/results-latest.txt`](other-triggers/results-latest.txt).
 - Node 24, headless `@superdoc/sdk` (native host, runtime v2), bare `@hocuspocus/server` room
   (no persistence, no auth). No integrator code involved.
 
@@ -79,13 +80,38 @@ no room | reject " receipt of the"  -> success=true
   footnote references trigger it in our tests.
 - A tracked change that contains the footnote reference itself accepts and rejects normally.
 
+## Other triggers (same failure)
+
+The footnote reference is one of several things that break it. In each synthetic file below, a
+control paragraph and a flagged paragraph carry the same tracked insertion; only the flagged
+paragraph has the element before the change. In a room the control change decides and the flagged
+one fails with `INVALID_CONTEXT: unsupported-context` (accept and reject). Without a room all four
+decisions succeed.
+
+| Element before the change, same paragraph | File | Reported range |
+|---|---|---|
+| `w:footnoteReference` | [`footnote/footnote-tracked-change.docx`](footnote/footnote-tracked-change.docx) | shifted left by one |
+| `w:endnoteReference` | [`other-triggers/endnote-tracked-change.docx`](other-triggers/endnote-tracked-change.docx) | shifted left by one (69, correct is 70) |
+| `w:smartTag` wrapper | [`other-triggers/smarttag-tracked-change.docx`](other-triggers/smarttag-tracked-change.docx) | **correct** (93) |
+| `w:customXml` wrapper | [`other-triggers/customxml-tracked-change.docx`](other-triggers/customxml-tracked-change.docx) | **correct** (93) |
+
+Run any of them with `node SD-01/footnote/repro.mjs <file> [--no-room]`. Builders: `other-triggers/build-*.py`.
+
+Because smartTag and customXml fail with correct ranges, the shifted range isn't the whole cause:
+the room path appears to refuse a decision when the paragraph holds a non-run inline element or
+wrapper before the change.
+
+Not triggers (tested the same way, decide in a room works): bookmarks, REF fields, comment anchors,
+`w:sym`, breaks, tabs, `w:cr`, inline images, list numbering, content controls (`w:sdt`),
+hyperlinks, table cells, move pairs, nested ins/del, with or without rsids.
+
 ## Root cause / analysis
 
 Every tracked change after a footnote reference reports a range shifted left by one per
 preceding footnote reference. Our reading is that the collaboration path resolves the decision
 against that shifted range, so it overlaps or misaligns with the footnote reference run and is
 refused as `unsupported-context`. The no-room path succeeds with the same shifted range, so it
-seems to resolve the change differently.
+seems to resolve the change differently. smartTag and customXml (above) fail with correct ranges, so the room path also refuses for another reason.
 
 ### Earlier matrix (none of these trigger it)
 
@@ -120,8 +146,10 @@ validation (`text-range-in-bookmark`), not evidence for this issue.
 
 ## Suggested fix
 
-- Count a footnote reference as one position when mapping tracked-change offsets, matching the
-  visible text. That would fix both the reported range and the in-room decision.
+- Count footnote and endnote references as one position when mapping tracked-change offsets,
+  matching the visible text, so reported ranges are correct.
+- In the room path, resolve the decision without refusing paragraphs that hold note references or
+  `smartTag` / `customXml` wrappers before the change (the no-room path handles all of them).
 - Give in-room refusals a specific error code; `unsupported-context` is shared by several
   unrelated validators (see SD-11), so the string alone doesn't identify the cause.
 

@@ -1,0 +1,50 @@
+Run: node SD-01/footnote/repro.mjs <file> [--no-room]  (decisions run in a fresh room each time)
+
+=== @superdoc/sdk 2.21.0 / footnote-tracked-change.docx
+room | accept " thirty" -> success=true
+room | reject " thirty" -> success=true
+room | accept " receipt of the" -> INVALID_CONTEXT: unsupported-context
+room | reject " receipt of the" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.21.0 / endnote-tracked-change.docx
+room | accept " designated" -> success=true
+room | reject " designated" -> success=true
+room | accept " designated" -> INVALID_CONTEXT: unsupported-context
+room | reject " designated" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.21.0 / smarttag-tracked-change.docx
+room | accept " designated" -> success=true
+room | reject " designated" -> success=true
+room | accept " designated" -> INVALID_CONTEXT: unsupported-context
+room | reject " designated" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.21.0 / customxml-tracked-change.docx
+room | accept " designated" -> success=true
+room | reject " designated" -> success=true
+room | accept " designated" -> INVALID_CONTEXT: unsupported-context
+room | reject " designated" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.22.0-next.11 / footnote-tracked-change.docx
+room | accept " thirty" -> success=true
+room | reject " thirty" -> success=true
+room | accept " receipt of the" -> INVALID_CONTEXT: unsupported-context
+room | reject " receipt of the" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.22.0-next.11 / endnote-tracked-change.docx
+room | accept " designated" -> success=true
+room | reject " designated" -> success=true
+room | accept " designated" -> INVALID_CONTEXT: unsupported-context
+room | reject " designated" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.22.0-next.11 / smarttag-tracked-change.docx
+room | accept " designated" -> success=true
+room | reject " designated" -> success=true
+room | accept " designated" -> INVALID_CONTEXT: unsupported-context
+room | reject " designated" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
+=== @superdoc/sdk 2.22.0-next.11 / customxml-tracked-change.docx
+room | accept " designated" -> success=true
+room | reject " designated" -> success=true
+room | accept " designated" -> INVALID_CONTEXT: unsupported-context
+room | reject " designated" -> INVALID_CONTEXT: unsupported-context
+no room: 4/4 decisions succeed
