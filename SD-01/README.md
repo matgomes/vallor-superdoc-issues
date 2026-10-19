@@ -1,5 +1,7 @@
 # SD-01 — In a collaboration room, `trackChanges.decide` fails with INVALID_CONTEXT for any tracked change after a footnote reference
 
+Reported upstream: [superdoc/docx-editor#4082](https://github.com/superdoc/docx-editor/issues/4082).
+
 ## Summary
 
 In a v2 collaboration room, accepting or rejecting a tracked change throws
