@@ -1,0 +1,12 @@
+change " thirty" reported range 21-28 -> text there: " thirty"
+change " receipt of the" reported range 39-54 -> text there: "r receipt of th"
+room | accept " thirty" -> success=true
+room | reject " thirty" -> success=true
+room | accept " receipt of the" -> INVALID_CONTEXT: unsupported-context
+room | reject " receipt of the" -> INVALID_CONTEXT: unsupported-context
+change " thirty" reported range 21-28 -> text there: " thirty"
+change " receipt of the" reported range 39-54 -> text there: "r receipt of th"
+no room | accept " thirty" -> success=true
+no room | reject " thirty" -> success=true
+no room | accept " receipt of the" -> success=true
+no room | reject " receipt of the" -> success=true

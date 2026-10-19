@@ -1,29 +1,91 @@
-# SD-01 — Any v2 collaboration room blocks "byte-apply" mutations with INVALID_CONTEXT — NEEDS REPRO on 2.23.0
+# SD-01 — In a collaboration room, `trackChanges.decide` fails with INVALID_CONTEXT for any tracked change after a footnote reference
 
 ## Summary
 
-Earlier production investigation reported that, inside a v2 collaboration room,
-structural mutations and `trackChanges.decide` sometimes fail with
-`{code:"INVALID_CONTEXT", message:"unsupported-context"}` on the exact payload that
-works fine outside a room, even though `capabilities()` still reports the operation as
-available. A narrow first pass (2 operations) on 2.20.0/2.21.0 did not reproduce it. This
-pass runs a much broader matrix — 8 distinct operations across decide-by-id/range/all,
-block structural edits, a bookmark-crossing replace, a scoped text rewrite, table-row
-insertion, and accepting a change located inside a table cell, each both outside and inside
-a bare Hocuspocus room, plus a two-collaborator concurrent-edit scenario — on superdoc
-2.23.0 / `@superdoc/sdk` 2.20.0. **None of the 8 operations, and the two-collaborator
-scenario, reproduced `INVALID_CONTEXT` or any in-room-only failure.** Per the brief's
-verdict rules, this is reported as **NEEDS REPRO**, not FIXED: we still only have the
-original production symptom (real error strings, Sentry-adjacent context) and no reliable
-trigger, on this version or the two before it.
+In a v2 collaboration room, accepting or rejecting a tracked change throws
+`INVALID_CONTEXT` (`unsupported-context`) when the change sits **after a footnote reference in
+the same paragraph**. Changes before the footnote reference in the same paragraph work, and the
+same calls succeed when the document is opened without a room. Nothing is changed when it fails.
+
+This is the trigger the original report was missing. Production saw `decide` fail in rooms on
+payloads that worked outside them; a broad matrix without footnotes (below) never reproduced it.
+Contracts use footnotes often, so any tracked change after one can't be accepted or rejected
+by id in a room.
+
+The tracked-change range reported for those changes is shifted one character left for each
+footnote reference before it. The visible text counts the footnote reference as one character
+(`￼`); the tracked-change offsets appear to count it as zero.
 
 ## Environment
 
-Node 24, headless `@superdoc/sdk`, a bare `@hocuspocus/server` 2.15.3 room (no persistence
-extension, no auth) via the shared `harness/lib/collab-server.mjs` helper. No integrator
-code involved.
+- **`@superdoc/sdk` 2.20.0 (this repo's pin, with superdoc 2.23.0): REPRODUCES**, see
+  [`footnote/results-sdk-2.20.0.txt`](footnote/results-sdk-2.20.0.txt).
+- Also reproduced on `@superdoc/sdk` 2.21.0 and 2.22.0-next.11.
+- Node 24, headless `@superdoc/sdk` (native host, runtime v2), bare `@hocuspocus/server` room
+  (no persistence, no auth). No integrator code involved.
 
-## Matrix tried (each operation run twice: out-of-room, then fresh in-room)
+## Fixture
+
+[`footnote/footnote-tracked-change.docx`](footnote/footnote-tracked-change.docx): one paragraph
+with one footnote, one tracked insertion before the footnote reference (" thirty") and one after
+it (" receipt of the"). Built by [`footnote/build-repro.py`](footnote/build-repro.py).
+
+## Steps to reproduce
+
+### Any document
+1. Add a footnote to a sentence, turn on track changes, and insert or delete text after the
+   footnote reference in the same paragraph.
+2. Open the document in a collaboration room (Hocuspocus) and join it with a second participant.
+3. Accept or reject that tracked change by id.
+4. `INVALID_CONTEXT: unsupported-context` is thrown. A tracked change before the footnote
+   reference in the same paragraph accepts normally.
+
+### Script
+```sh
+node SD-01/footnote/repro.mjs SD-01/footnote/footnote-tracked-change.docx            # in a room
+node SD-01/footnote/repro.mjs SD-01/footnote/footnote-tracked-change.docx --no-room  # no room
+```
+It prints the reported range of each change, then runs accept and reject on each, every time in a
+fresh room (one participant creates it, a second joins and decides).
+
+## Expected / Actual
+
+Expected: accept and reject work for every tracked change, whatever comes before it in the paragraph.
+
+Actual (`@superdoc/sdk` 2.20.0):
+
+```text
+paragraph: "Payment is due within thirty days￼ after receipt of the invoice."
+change " thirty"          reported range 21-28 -> text there: " thirty"
+change " receipt of the"  reported range 39-54 -> text there: "r receipt of th"   <- shifted by one
+
+room    | accept " thirty"          -> success=true
+room    | reject " thirty"          -> success=true
+room    | accept " receipt of the"  -> INVALID_CONTEXT: unsupported-context
+room    | reject " receipt of the"  -> INVALID_CONTEXT: unsupported-context
+no room | accept " receipt of the"  -> success=true
+no room | reject " receipt of the"  -> success=true
+```
+
+- The document and revision are left unchanged when it fails.
+- `decide({ target: { kind: "all" } })` succeeds in the same room.
+- Targeting by `ids` or `range` fails the same way as `id`, including a range with the offsets
+  shifted to match the visible text.
+- Reproduced with insertions and deletions, directly after the footnote reference and about 50
+  characters after it.
+- Tracked changes after a REF field or a bookmark in the same paragraph are not affected; only
+  footnote references trigger it in our tests.
+- A tracked change that contains the footnote reference itself accepts and rejects normally.
+
+## Root cause / analysis
+
+Every tracked change after a footnote reference reports a range shifted left by one per
+preceding footnote reference. Our reading is that the collaboration path resolves the decision
+against that shifted range, so it overlaps or misaligns with the footnote reference run and is
+refused as `unsupported-context`. The no-room path succeeds with the same shifted range, so it
+seems to resolve the change differently.
+
+### Earlier matrix (none of these trigger it)
 
 Fixtures: `dpa-table-cell-revisions.docx` (has 3 existing tracked changes, 2 of them inside
 a table cell), `bookmark-x2-around-text.docx` (has a real bookmark, `BM_term`, wrapping an
@@ -54,54 +116,12 @@ The one failure found (`doc.replace` across a bookmark) is **not** in-room-speci
 fails identically with and without collaboration, so it is a separate, legitimate
 validation (`text-range-in-bookmark`), not evidence for this issue.
 
-## Verdict
+## Suggested fix
 
-**NEEDS REPRO.** Across 8 operations × 2 contexts, plus a concurrent two-collaborator
-variant, nothing produced `INVALID_CONTEXT` or any room-only failure on 2.23.0. This
-matches the earlier (narrower) 2.20.0/2.21.0 finding and extends it substantially — the
-non-reproduction is no longer just "2 ops tried," but now also covers table-cell decides,
-table-row structural edits, cross-paragraph scoped replace, and concurrent multi-client
-access.
-
-## What we know from production (for the vendor)
-
-- Symptom: `trackChanges.decide` and other structural mutations fail
-  `{success:false, failure:{code:"INVALID_CONTEXT", message:"unsupported-context"}}` inside
-  a v2 collaboration room, on payloads that work identically outside a room.
-  `accept_tracked_changes` (no args) reportedly succeeded 0/5 times in-room vs. 5/5
-  out-of-room in one observed incident.
-- `doc.mutations.apply` is understood (from source-level investigation, not confirmed here)
-  to route through a patch-apply entrypoint gated on `performByteApply === false` plus a
-  "fenced" (source-backed) main story; the collaboration transport is believed to always
-  supply `performByteApply:false`.
-- `unsupported-context` is not unique to this failure — this investigation and SD-11 both
-  found the same string attached to unrelated validators (a field/bookmark text-range
-  guard, in SD-11's case) in this very SDK version, so the string alone is not a reliable
-  signature of this specific bug.
-- Historical context: at one point this was misattributed to "reconstructed-looking" change
-  ids on one specific document; a later release note mentioned "delete across section
-  boundaries and explain rejected edits" with no retest recorded.
-
-## Suggested fix (for when this can be reproduced)
-
-- A stable, specific error code (not the shared `unsupported-context` string) for whatever
-  in-room-only restriction actually exists, so a caller — and a bug report — can tell it
-  apart from the five-plus other things that currently throw the same message (see SD-11).
-- `capabilities()` should reflect any in-room-only restriction rather than reporting
-  `available:true` unconditionally.
-
-## Possible next steps to actually reproduce this
-
-- Try the exact production document(s)/payload that triggered the original incident,
-  rather than our synthetic/anonymized fixtures — the original symptom may depend on
-  specific document content (e.g. the "reconstructed-looking" ids mentioned in the
-  historical note) that these fixtures don't carry.
-- Try section-boundary-crossing operations specifically (a release note mentioned
-  "delete across section boundaries" as a related fix — not covered in this matrix since
-  none of our fixtures have multiple sections).
-- Try a longer-running room (minutes, not seconds) with more collaborators and more
-  concurrent edits, in case the restriction is about accumulated room state rather than
-  the first operation in a fresh room.
+- Count a footnote reference as one position when mapping tracked-change offsets, matching the
+  visible text. That would fix both the reported range and the in-room decision.
+- Give in-room refusals a specific error code; `unsupported-context` is shared by several
+  unrelated validators (see SD-11), so the string alone doesn't identify the cause.
 
 ## Related
 

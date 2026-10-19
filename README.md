@@ -29,6 +29,7 @@ suggested fix and related issues. Where an issue is visual or interaction-driven
 
 - [**superdoc/docx-editor#4047**](https://github.com/superdoc/docx-editor/issues/4047) (reported to SuperDoc): **Accept/Reject on a selection spanning two table cells does nothing** when only one of the cells holds a tracked change. The command returns `false`, the change stays pending, and no error is raised.
 - [**superdoc/docx-editor#4058**](https://github.com/superdoc/docx-editor/issues/4058) (reported to SuperDoc): **comments created in SuperDoc have no creation date.** `comments.list()` returns no `createdTime`, and the exported `<w:comment>` has no `w:date`. This applies to the built-in composer and to `doc.comments.create()`.
+- [**SD-01**](SD-01/): **in a collaboration room, accept/reject fails with `INVALID_CONTEXT` for any tracked change after a footnote reference** in the same paragraph. The reported change range is shifted one character per preceding footnote reference; the same calls work without a room.
 - [**SD-03**](SD-03/): SuperDoc writes **two `<w:del/>` into one paragraph mark** (deleting across an already-deleted paragraph mark), then refuses its own file: Accept All fails with `INVALID_INPUT` for the whole document. [Video](SD-03/video/SD-03.mp4).
 - [**SD-09**](SD-09/): **tracked delete across table cells is rejected in the editor.** Selecting across cells and pressing Backspace gives "This edit couldn't be completed". The engine-level `doc.delete` now works on 2.23.0; the editor path still rejects it. [Video](SD-09/video/SD-09.mp4).
 - [**SD-11**](SD-11/): **can't delete a paragraph containing a REF cross-reference field.** `blocks.delete` (tracked and direct) → `paragraph-tracked-wrapper-unsupported`; `deleteRange` → `unsupported-context`. [Video](SD-11/video/SD-11.mp4).
@@ -79,7 +80,6 @@ suggested fix and related issues. Where an issue is visual or interaction-driven
 
 Seen in production, but we couldn't trigger them on 2.23.0 by script or by hand. Each folder lists the exact error strings and what we tried.
 
-- [**SD-01**](SD-01/): `INVALID_CONTEXT unsupported-context` on mutations / decide inside v2 collaboration rooms.
 - [**SD-34**](SD-34/): `save-failed`: "table structural projection span drift…" after table edits; every save fails until remount.
 - [**SD-35**](SD-35/): `collaboration save barrier failed: projection-session-sync-failed` after a rejected edit.
 - [**SD-71**](SD-71/): SDK host crashes in long agent sessions (`Host process disconnected` at ~2 GB, `Host watchdog timed out waiting for cli.invoke`).
