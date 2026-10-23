@@ -1,0 +1,44 @@
+Run: node SD-109/repro.mjs <file...>   (SDK_DIR=<dir with a different @superdoc/sdk install> to test another version)
+
+@superdoc/sdk 2.22.0
+SD-105/tracked-paste-schedule.docx
+  open without a room: ok
+  create room: ok
+  second client joins: ok (revision 1)
+SD-105/tracked-paste-schedule-accepted.docx
+  open without a room: ok
+  create room: ok
+  second client joins: ok (revision 1)
+SD-105/synthetic-control-no-tracking.docx
+  open without a room: ok
+  create room: ok
+  second client joins: ok (revision 1)
+
+@superdoc/sdk 2.23.0-next.11
+SD-105/tracked-paste-schedule.docx
+  open without a room: ok
+  create room: ok
+  second client joins: COMMAND_FAILED: collaboration save barrier failed: COLLAB_V2_PROJECTION_VALIDATOR_FAILED
+SD-105/tracked-paste-schedule-accepted.docx
+  open without a room: ok
+  create room: ok
+  second client joins: COMMAND_FAILED: collaboration save barrier failed: COLLAB_V2_PROJECTION_VALIDATOR_FAILED
+SD-105/synthetic-control-no-tracking.docx
+  open without a room: ok
+  create room: ok
+  second client joins: ok (revision 1)
+
+@superdoc/sdk 2.23.0-next.13
+SD-105/tracked-paste-schedule.docx
+  open without a room: ok
+  create room: ok
+  second client joins: COMMAND_FAILED: collaboration save barrier failed: COLLAB_V2_PROJECTION_VALIDATOR_FAILED
+SD-105/tracked-paste-schedule-accepted.docx
+  open without a room: ok
+  create room: ok
+  second client joins: COMMAND_FAILED: collaboration save barrier failed: COLLAB_V2_PROJECTION_VALIDATOR_FAILED
+SD-105/synthetic-control-no-tracking.docx
+  open without a room: ok
+  create room: ok
+  second client joins: ok (revision 1)
+
